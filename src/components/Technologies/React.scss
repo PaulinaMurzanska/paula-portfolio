@@ -1,0 +1,23 @@
+@import'../../scss/variables';
+
+.inner-container {
+  position: relative;
+
+  .react-logo {
+    img {
+      height: 100px;
+    }
+  }
+  .ex {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 1.5rem;
+    color: $menuLinksColor;
+
+    &:hover {
+      color: $textColor;
+    }
+  }
+}
+

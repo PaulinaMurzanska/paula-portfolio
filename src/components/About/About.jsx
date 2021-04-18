@@ -1,0 +1,122 @@
+import React, {useState} from 'react';
+import "./About.scss";
+import "../Skills/Skills.scss";
+import {Container} from "reactstrap";
+import SkillsSmall from "components/Skills/Sklills";
+import react from "../../images/react.png";
+import js from "../../images/js.png";
+import sass from "../../images/sass.png";
+import html from "../../images/html.png";
+import django from "../../images/django.png";
+import drf from "../../images/djangorest.png";
+import python from "../../images/python.png";
+import css from "../../images/css.png"
+import {ImCross} from "react-icons/im";
+import {Link} from "react-router-dom";
+import {ROUTE_JS, ROUTE_REACT, ROUTE_SKILLS} from "Constants/Routes";
+
+class About extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            skillOpen: false,
+        }
+    }
+
+    handleClick = () => {
+        this.setState({
+            skillOpen: true,
+        });
+    }
+    handleClose = () => {
+        this.setState({
+            skillOpen: false,
+        })
+    }
+
+
+    render() {
+        const text = "onClick={clickHereToOpen}";
+        const {skillOpen} = this.state;
+
+
+        return (
+            <React.Fragment>
+                <div className='about-page'>
+                    <Container className='container-about'>
+                        <div className={`about-text ${skillOpen ? "hidden" : ""}`}>
+                            <div className='about-inner-container-text'>
+                                <span>&lt;h1&gt; Hello Visitor! &lt;/h1&gt;</span>
+                                <h1>I'm junior skilled Front End developer,
+                                    dreaming to explore and master the World of Codes...</h1>
+                                <hr/>
+                                <p>
+                                    I'm currently based in Krakow junior Front End developer with
+                                    a little bit of Back End coding experience.
+                                </p>
+                                <p> Even though for many years my
+                                    professional life has been connected to hospitality business,
+                                    HR and properties management, I'm very exited to start new career
+                                    in IT.
+                                </p>
+                                <p>
+                                    It's time for change! Someone told me once, that to become a good developer you need
+                                    to
+                                    make
+                                    coding become your passion. It worked that way for me! Damn, it requires a lot of
+                                    digging,
+                                    reading,
+                                    searching, failing to finally find the solutions for problems, that actually
+                                    work...what a great satisfaction that is!
+                                </p>
+                                <p>
+                                    I had finished a full stack developer bootcamp, where I had learned technologies
+                                    from
+                                    back
+                                    end
+                                    as well as front end development.
+                                    I know now, that I want to develop my skills within front end . Currently I'm mostly
+                                    focused
+                                    on React SPA for desktop and mobiles app. </p>
+
+                                <p> So what actually are my skills?</p>
+                                <span className='clickable'
+                                      onClick={this.handleClick}
+                                >{text}</span>
+
+
+                            </div>
+                        </div>
+                        <div className={`skills ${skillOpen ? "active" : ""}`}>
+                            <div className='about-inner-container-skills'>
+                                <SkillsSmall icon={react}
+                                             path={ROUTE_REACT}
+                                />
+                                <SkillsSmall icon={js}
+                                             path={ROUTE_JS}
+                                />
+                                <SkillsSmall icon={sass}/>
+                                <SkillsSmall icon={html}/>
+                                <SkillsSmall icon={django}/>
+                                <SkillsSmall icon={drf}/>
+                                <SkillsSmall icon={python}/>
+                                <SkillsSmall icon={css}/>
+                                <div className="ex">
+                                    <ImCross
+                                        onClick={this.handleClose}
+                                    />
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </Container>
+                </div>
+
+            </React.Fragment>
+
+        )
+    }
+}
+
+export default About;

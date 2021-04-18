@@ -1,0 +1,76 @@
+@import '../../../scss/variables';
+
+.description {
+  display: flex;
+  position: relative;
+
+  .description-text {
+    padding: 20px;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    span {
+      font-size: 1.3rem;
+      font-weight: bolder;
+    }
+
+    .onclick {
+      font-weight: normal;
+      font-size: 1.5rem;
+      margin-top: 15px;
+      text-align: right;
+
+      a {
+        text-decoration: none;
+        color: $textColor;
+
+        &:hover {
+          color: $menuLinksColor;
+          transition: .3s;
+        }
+      }
+    }
+  }
+
+  .demo-image {
+    margin-top: 50px;
+    padding: 20px;
+
+    .demo-image-wrapper {
+      box-shadow: -6px 1px 7px 0px rgba(151, 132, 132, 0.75);
+      position: relative;
+
+      &::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f00e";
+        font-weight: 900;
+        font-size: 20px;
+        color: #5e5a5a;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 6;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+        background-color: white;
+        opacity: 1;
+      }
+    }
+  }
+
+  .ex {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 1.5rem;
+    color: $menuLinksColor;
+
+    &:hover {
+      color: $textColor;
+    }
+  }
+}

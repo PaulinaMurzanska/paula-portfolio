@@ -1,0 +1,116 @@
+@import "../../scss/variables";
+
+
+.about-page {
+  width: 100%;
+  height: 100vh;
+
+
+  .container-about {
+    width: 95%;
+    margin: 0 auto;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: flex-end;
+
+    .about-text {
+      width: 80%;
+      color:$textColor;
+      &.hidden{
+        display: none;
+      }
+
+
+      .about-inner-container-text {
+        padding: 50px;
+        margin: 20px 0 20px 20px;
+        background-color: white;
+        opacity: 0.7;
+        box-shadow: -6px 1px 7px 0px rgba(151, 132, 132, 0.75);
+
+        @media(max-width: 600px) {
+          padding: 15px;
+        }
+
+        span {
+          font-size: 1.5rem;
+          font-weight: bolder;
+        }
+
+        h1 {
+          font-size: 2rem;
+          text-align: right;
+          @media(max-width: 600px) {
+            font-size: 1.3rem;
+            text-align: left;
+          }
+        }
+
+        hr {
+          width: 70%;
+          height: 1px;
+          margin: 0;
+          background-color: #000;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          text-align: justify;
+          text-indent: 15px;
+        }
+
+        .clickable {
+          font-size: 1.5rem;
+          font-weight: normal;
+
+          &:hover {
+            color: $menuLinksColor;
+            transition: .3s;
+          }
+        }
+
+      }
+    }
+
+    .skills {
+      width: 80%;
+      display: none;
+      &.active{
+        display: block;
+      }
+
+      .about-inner-container-skills {
+        padding: 50px;
+        margin: 20px 0 20px 20px;
+        background-color: white;
+        opacity: 0.8;
+        box-shadow: -6px 1px 7px 0px rgba(151, 132, 132, 0.75);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        .ex{
+          position: absolute;
+          top:20px;
+          right: 20px;
+          font-size: 1.5rem;
+          color: $menuLinksColor;
+          &:hover{
+            color:$textColor;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+
+}
+
+
