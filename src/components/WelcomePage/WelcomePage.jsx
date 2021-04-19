@@ -16,9 +16,7 @@ const WelcomePage = () => {
         <Container className='welcome-container'>
 
             <div className='welcome-first-section'>
-                <div className='photo-section'>
-                    <p>pphoto</p>
-                </div>
+                <div className='photo-section'/>
                 <div className='circle-codes'>
                     <ul className='circle'>
                         <li>

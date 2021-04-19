@@ -13,7 +13,7 @@ import python from "../../images/python.png";
 import css from "../../images/css.png"
 import {ImCross} from "react-icons/im";
 import {Link} from "react-router-dom";
-import {ROUTE_JS, ROUTE_REACT, ROUTE_SKILLS} from "Constants/Routes";
+import {ROUTE_HTML, ROUTE_JS, ROUTE_REACT, ROUTE_SASS, ROUTE_SKILLS} from "Constants/Routes";
 
 class About extends React.Component {
     constructor(props) {
@@ -95,8 +95,12 @@ class About extends React.Component {
                                 <SkillsSmall icon={js}
                                              path={ROUTE_JS}
                                 />
-                                <SkillsSmall icon={sass}/>
-                                <SkillsSmall icon={html}/>
+                                <SkillsSmall icon={sass}
+                                             path={ROUTE_SASS}
+                                />
+                                <SkillsSmall icon={html}
+                                path={ROUTE_HTML}
+                                />
                                 <SkillsSmall icon={django}/>
                                 <SkillsSmall icon={drf}/>
                                 <SkillsSmall icon={python}/>

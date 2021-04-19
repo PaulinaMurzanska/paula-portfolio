@@ -1,14 +1,14 @@
 import React from "react";
 import SkillDetail from "components/Skills/SkillDetail";
-import {aboutJavaScript, jsList} from "Constants/Descriptions";
+import {aboutHtml, htmlDisclaimer} from "Constants/Descriptions";
 import '../../scss/pageContainer.scss';
 import './React.scss';
 import {ROUTE_ABOUT} from "Constants/Routes";
-import jsLogo from "../../images/js.png";
+import htmlLogo from "../../images/html.png";
 import {Link} from "react-router-dom";
 import {ImCross} from "react-icons/im";
 
-const JavaScript = () => {
+const Html = () => {
     return (
         <React.Fragment>
             <div className="pages">
@@ -16,13 +16,16 @@ const JavaScript = () => {
                     <div className="container-text">
                         <div className="inner-container">
                             <div className='react-logo'>
-                                <img src={jsLogo}/>
+                                <img src={htmlLogo}/>
                             </div>
                             <SkillDetail
-                                intro={aboutJavaScript}
-                                content=""
-                                list={jsList}
+                                intro={aboutHtml}
+                                content={htmlDisclaimer}
+                                list={[]}
                             />
+                            <div className='projects-wrapper'>
+                                projects html
+                            </div>
                             <div className="ex">
                                 <Link to={ROUTE_ABOUT}>
                                     <ImCross/>
@@ -35,4 +38,4 @@ const JavaScript = () => {
         </React.Fragment>
     )
 }
-export default JavaScript;
+export default Html;

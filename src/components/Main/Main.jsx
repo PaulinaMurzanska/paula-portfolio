@@ -3,9 +3,9 @@ import {BrowserRouter, Switch, Route,} from "react-router-dom";
 import {
     ROUTE_ABOUT, ROUTE_BUDGET,
     ROUTE_CONTACT,
-    ROUTE_EDUCATION, ROUTE_JS,
+    ROUTE_EDUCATION, ROUTE_HTML, ROUTE_JS,
     ROUTE_MAIN, ROUTE_PLANTATION,
-    ROUTE_PROJECTS, ROUTE_REACT,
+    ROUTE_PROJECTS, ROUTE_REACT, ROUTE_SASS,
     ROUTE_SKILLS,
     ROUTE_WORK
 } from "Constants/Routes";
@@ -24,6 +24,8 @@ import AboutReact from "components/Technologies/React";
 import Budget from "components/ProjectsPages/ReactProjects/Budget";
 import Plantation from "components/ProjectsPages/ReactProjects/Plantation";
 import JavaScript from "components/Technologies/JavaScript";
+import Sass from "components/Technologies/Sass";
+import Html from "components/Technologies/Html";
 
 class Main extends React.PureComponent {
     render() {
@@ -36,27 +38,21 @@ class Main extends React.PureComponent {
                 </Route>
                 <Route exact path={ROUTE_ABOUT}>
                     <NavLeft/>
-                    {/*<HeaderBar/>*/}
                     <About/>
                 </Route>
                 <Route exact path={ROUTE_PROJECTS}>
                     <NavLeft/>
-                    {/*<HeaderBar/>*/}
                     <Projects/>
                 </Route>
                 <Route exact path={ROUTE_WORK}>
-                    {/*<HeaderBar/>*/}
                     <NavLeft/>
-                    {/*<WorkExperience/>*/}
                     <About/>
                 </Route>
                 <Route exact path={ROUTE_EDUCATION}>
-                    {/*<HeaderBar/>*/}
                     <NavLeft/>
                     <Education/>
                 </Route>
                 <Route exact path={ROUTE_CONTACT}>
-                    {/*<HeaderBar/>*/}
                     <NavLeft/>
                     <Contact/>
                 </Route>
@@ -79,6 +75,14 @@ class Main extends React.PureComponent {
                  <Route exact path={ROUTE_JS}>
                     <NavLeft/>
                     <JavaScript/>
+                </Route>
+                 <Route exact path={ROUTE_SASS}>
+                    <NavLeft/>
+                    <Sass/>
+                </Route>
+                <Route exact path={ROUTE_HTML}>
+                    <NavLeft/>
+                    <Html/>
                 </Route>
             </Switch>
 

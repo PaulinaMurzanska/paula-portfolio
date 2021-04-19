@@ -1,14 +1,14 @@
 import React from "react";
 import SkillDetail from "components/Skills/SkillDetail";
-import {aboutJavaScript, jsList} from "Constants/Descriptions";
+import {aboutSass} from "Constants/Descriptions";
 import '../../scss/pageContainer.scss';
 import './React.scss';
 import {ROUTE_ABOUT} from "Constants/Routes";
-import jsLogo from "../../images/js.png";
+import sassLogo from "../../images/sass.png";
 import {Link} from "react-router-dom";
 import {ImCross} from "react-icons/im";
 
-const JavaScript = () => {
+const Sass = () => {
     return (
         <React.Fragment>
             <div className="pages">
@@ -16,12 +16,12 @@ const JavaScript = () => {
                     <div className="container-text">
                         <div className="inner-container">
                             <div className='react-logo'>
-                                <img src={jsLogo}/>
+                                <img src={sassLogo}/>
                             </div>
                             <SkillDetail
-                                intro={aboutJavaScript}
+                                intro={aboutSass}
                                 content=""
-                                list={jsList}
+                                list={[]}
                             />
                             <div className="ex">
                                 <Link to={ROUTE_ABOUT}>
@@ -35,4 +35,4 @@ const JavaScript = () => {
         </React.Fragment>
     )
 }
-export default JavaScript;
+export default Sass;

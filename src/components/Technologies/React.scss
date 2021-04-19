@@ -16,7 +16,7 @@
     color: $menuLinksColor;
 
     &:hover {
-      color: $textColor;
+      color: $activeLinkColor;
     }
   }
 }

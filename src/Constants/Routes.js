@@ -9,6 +9,8 @@ const ROUTE_REACT="/details/react";
 const ROUTE_BUDGET='/details/react/budget';
 const ROUTE_PLANTATION='/details/react/plantation';
 const ROUTE_JS="/details/javascript";
+const ROUTE_SASS="/details/sass";
+const ROUTE_HTML="/details/html";
 
 export {
     ROUTE_MAIN,
@@ -22,4 +24,6 @@ export {
     ROUTE_BUDGET,
     ROUTE_PLANTATION,
     ROUTE_JS,
+    ROUTE_SASS,
+    ROUTE_HTML,
 }
