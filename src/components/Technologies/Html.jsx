@@ -7,6 +7,8 @@ import {ROUTE_ABOUT} from "Constants/Routes";
 import htmlLogo from "../../images/html.png";
 import {Link} from "react-router-dom";
 import {ImCross} from "react-icons/im";
+import HtmlSingleProject from "components/Technologies/HtmlSingleProject";
+import alex from '../../images/alexsmith.png';
 
 const Html = () => {
     return (
@@ -24,7 +26,120 @@ const Html = () => {
                                 list={[]}
                             />
                             <div className='projects-wrapper'>
-                                projects html
+                                <HtmlSingleProject
+                                    fontStyles={{
+                                        fontSize: "1.5rem",
+                                        fontFamily: "Oxygen, sans-serif",
+                                        color: "#ff724c",
+                                        fontWeight: "700"
+                                    }}
+                                    linkStyles={{
+                                        fontSize: "1rem",
+                                        fontFamily: "Oxygen, sans-serif",
+                                        fontWeight: "700"
+                                    }}
+
+                                    backgroundImage={alex}
+                                    siteTitle="alex smith"
+                                    myLink="https://www.w3schools.com/cssref/pr_background-image.asp"
+                                    originalLink='https://www.w3schools.com/cssref/pr_background-image.asp'
+                                    githubLink="https://www.w3schools.com/cssref/pr_background-image.asp"
+                                />
+                                 <HtmlSingleProject
+                                    fontStyles={{
+                                        fontSize: "1.5rem",
+                                        fontFamily: "Oxygen, sans-serif",
+                                        color: "#ff724c",
+                                        fontWeight: "700"
+                                    }}
+                                    linkStyles={{
+                                        fontSize: "1rem",
+                                        fontFamily: "Oxygen, sans-serif",
+                                        fontWeight: "700"
+                                    }}
+
+                                    backgroundImage={alex}
+                                    siteTitle="alex smith"
+                                    myLink="https://www.w3schools.com/cssref/pr_background-image.asp"
+                                    originalLink='https://www.w3schools.com/cssref/pr_background-image.asp'
+                                    githubLink="https://www.w3schools.com/cssref/pr_background-image.asp"
+                                />
+                                 <HtmlSingleProject
+                                    fontStyles={{
+                                        fontSize: "1.5rem",
+                                        fontFamily: "Oxygen, sans-serif",
+                                        color: "#ff724c",
+                                        fontWeight: "700"
+                                    }}
+                                    linkStyles={{
+                                        fontSize: "1rem",
+                                        fontFamily: "Oxygen, sans-serif",
+                                        fontWeight: "700"
+                                    }}
+
+                                    backgroundImage={alex}
+                                    siteTitle="alex smith"
+                                    myLink="https://www.w3schools.com/cssref/pr_background-image.asp"
+                                    originalLink='https://www.w3schools.com/cssref/pr_background-image.asp'
+                                    githubLink="https://www.w3schools.com/cssref/pr_background-image.asp"
+                                />
+                                  <HtmlSingleProject
+                                    fontStyles={{
+                                        fontSize: "1.5rem",
+                                        fontFamily: "Oxygen, sans-serif",
+                                        color: "#ff724c",
+                                        fontWeight: "700"
+                                    }}
+                                    linkStyles={{
+                                        fontSize: "1rem",
+                                        fontFamily: "Oxygen, sans-serif",
+                                        fontWeight: "700"
+                                    }}
+
+                                    backgroundImage={alex}
+                                    siteTitle="alex smith"
+                                    myLink="https://www.w3schools.com/cssref/pr_background-image.asp"
+                                    originalLink='https://www.w3schools.com/cssref/pr_background-image.asp'
+                                    githubLink="https://www.w3schools.com/cssref/pr_background-image.asp"
+                                />
+                                  <HtmlSingleProject
+                                    fontStyles={{
+                                        fontSize: "1.5rem",
+                                        fontFamily: "Oxygen, sans-serif",
+                                        color: "#ff724c",
+                                        fontWeight: "700"
+                                    }}
+                                    linkStyles={{
+                                        fontSize: "1rem",
+                                        fontFamily: "Oxygen, sans-serif",
+                                        fontWeight: "700"
+                                    }}
+
+                                    backgroundImage={alex}
+                                    siteTitle="alex smith"
+                                    myLink="https://www.w3schools.com/cssref/pr_background-image.asp"
+                                    originalLink='https://www.w3schools.com/cssref/pr_background-image.asp'
+                                    githubLink="https://www.w3schools.com/cssref/pr_background-image.asp"
+                                />
+                                  <HtmlSingleProject
+                                    fontStyles={{
+                                        fontSize: "1.5rem",
+                                        fontFamily: "Oxygen, sans-serif",
+                                        color: "#ff724c",
+                                        fontWeight: "700"
+                                    }}
+                                    linkStyles={{
+                                        fontSize: "1rem",
+                                        fontFamily: "Oxygen, sans-serif",
+                                        fontWeight: "700"
+                                    }}
+
+                                    backgroundImage={alex}
+                                    siteTitle="alex smith"
+                                    myLink="https://www.w3schools.com/cssref/pr_background-image.asp"
+                                    originalLink='https://www.w3schools.com/cssref/pr_background-image.asp'
+                                    githubLink="https://www.w3schools.com/cssref/pr_background-image.asp"
+                                />
                             </div>
                             <div className="ex">
                                 <Link to={ROUTE_ABOUT}>
