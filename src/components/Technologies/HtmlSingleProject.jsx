@@ -24,13 +24,20 @@ const HtmlSingleProject = ({
 
                     <div className='original-version'>
                         <a href={originalLink}
-                           style={linkStyles}
-                        >original site</a>
+                           target='_blank'
+                           style={linkStyles}>
+                            {
+                                originalLink === "#" && ("site no longer exist")
+                            }
+                            {
+                                originalLink !== "#" && (' original site')
+                            }
+                        </a>
                     </div>
 
                 </div>
                 <div className='github'>
-                    <a href={githubLink}>
+                    <a href={githubLink} target='_blank'>
                         <AiFillGithub/>
                     </a>
                 </div>

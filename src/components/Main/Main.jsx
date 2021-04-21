@@ -28,7 +28,34 @@ import Sass from "components/Technologies/Sass";
 import Html from "components/Technologies/Html";
 
 class Main extends React.PureComponent {
+    constructor(props) {
+        super(props);
+        this.state = {
+            skillOpen: false,
+
+        }
+    }
+
+    handleCloseDetails = () => {
+        this.setState({
+            skillOpen: true,
+        })
+    }
+      handleClick = () => {
+        this.setState({
+            skillOpen: true,
+        });
+    }
+    handleClose = () => {
+        console.log("close trigerred");
+        this.setState({
+            skillOpen: false,
+        });
+    }
+
     render() {
+        const{skillOpen}=this.state;
+        console.log(skillOpen);
         return (
 
             <Switch>
@@ -38,7 +65,11 @@ class Main extends React.PureComponent {
                 </Route>
                 <Route exact path={ROUTE_ABOUT}>
                     <NavLeft/>
-                    <About/>
+                    <About
+                    handleClick={this.handleClick}
+                    skillOpen={skillOpen}
+                    handleCLose={this.handleClose}
+                    />
                 </Route>
                 <Route exact path={ROUTE_PROJECTS}>
                     <NavLeft/>
@@ -56,27 +87,28 @@ class Main extends React.PureComponent {
                     <NavLeft/>
                     <Contact/>
                 </Route>
-                 <Route exact path={ROUTE_SKILLS}>
+                <Route exact path={ROUTE_SKILLS}>
                     <NavLeft/>
                     <SkillDetail/>
                 </Route>
                 <Route exact path={ROUTE_REACT}>
                     <NavLeft/>
-                    <AboutReact/>
+                    <AboutReact
+                    />
                 </Route>
-                 <Route exact path={ROUTE_BUDGET}>
+                <Route exact path={ROUTE_BUDGET}>
                     <NavLeft/>
                     <Budget/>
                 </Route>
-                 <Route exact path={ROUTE_PLANTATION}>
+                <Route exact path={ROUTE_PLANTATION}>
                     <NavLeft/>
                     <Plantation/>
                 </Route>
-                 <Route exact path={ROUTE_JS}>
+                <Route exact path={ROUTE_JS}>
                     <NavLeft/>
                     <JavaScript/>
                 </Route>
-                 <Route exact path={ROUTE_SASS}>
+                <Route exact path={ROUTE_SASS}>
                     <NavLeft/>
                     <Sass/>
                 </Route>

@@ -9,6 +9,9 @@ import {Link} from "react-router-dom";
 import {ImCross} from "react-icons/im";
 import HtmlSingleProject from "components/Technologies/HtmlSingleProject";
 import alex from '../../images/alexsmith.png';
+import winter from "../../images/winterscreen.png";
+import pofo2 from '../../images/pofo2screen.png';
+import pofo1 from '../../images/pofo1screen.png';
 
 const Html = () => {
     return (
@@ -41,15 +44,15 @@ const Html = () => {
 
                                     backgroundImage={alex}
                                     siteTitle="alex smith"
-                                    myLink="https://www.w3schools.com/cssref/pr_background-image.asp"
-                                    originalLink='https://www.w3schools.com/cssref/pr_background-image.asp'
-                                    githubLink="https://www.w3schools.com/cssref/pr_background-image.asp"
+                                    myLink="https://alexresumesite.netlify.app/"
+                                    originalLink="#"
+                                    githubLink="https://github.com/PaulinaMurzanska/Alex-Smith-Cv-project.git"
                                 />
-                                 <HtmlSingleProject
+                                <HtmlSingleProject
                                     fontStyles={{
                                         fontSize: "1.5rem",
-                                        fontFamily: "Oxygen, sans-serif",
-                                        color: "#ff724c",
+                                        fontFamily: "Montserrat",
+                                        color: "rgba(5,5,5,0.77)",
                                         fontWeight: "700"
                                     }}
                                     linkStyles={{
@@ -58,17 +61,17 @@ const Html = () => {
                                         fontWeight: "700"
                                     }}
 
-                                    backgroundImage={alex}
-                                    siteTitle="alex smith"
-                                    myLink="https://www.w3schools.com/cssref/pr_background-image.asp"
-                                    originalLink='https://www.w3schools.com/cssref/pr_background-image.asp'
-                                    githubLink="https://www.w3schools.com/cssref/pr_background-image.asp"
+                                    backgroundImage={winter}
+                                    siteTitle="Winter Photographer"
+                                    myLink="https://winterphotography.netlify.app/"
+                                    originalLink='https://www.site123.com/templates/preview/1223613?aff=248686&sid=wbtemplates'
+                                    githubLink="https://github.com/PaulinaMurzanska/Winter-Photography.git"
                                 />
-                                 <HtmlSingleProject
+                                <HtmlSingleProject
                                     fontStyles={{
                                         fontSize: "1.5rem",
-                                        fontFamily: "Oxygen, sans-serif",
-                                        color: "#ff724c",
+                                        fontFamily: "Roboto",
+                                        color: "#ffffff",
                                         fontWeight: "700"
                                     }}
                                     linkStyles={{
@@ -77,17 +80,17 @@ const Html = () => {
                                         fontWeight: "700"
                                     }}
 
-                                    backgroundImage={alex}
-                                    siteTitle="alex smith"
-                                    myLink="https://www.w3schools.com/cssref/pr_background-image.asp"
-                                    originalLink='https://www.w3schools.com/cssref/pr_background-image.asp'
-                                    githubLink="https://www.w3schools.com/cssref/pr_background-image.asp"
+                                    backgroundImage={pofo2}
+                                    siteTitle="POFO carousel"
+                                    myLink="https://pofo-carousel.netlify.app/"
+                                    originalLink='http://www.themezaa.com/html/pofo/home-portfolio-multiple-carousel.html'
+                                    githubLink="https://github.com/PaulinaMurzanska/POFO2-project.git"
                                 />
-                                  <HtmlSingleProject
+                                <HtmlSingleProject
                                     fontStyles={{
                                         fontSize: "1.5rem",
-                                        fontFamily: "Oxygen, sans-serif",
-                                        color: "#ff724c",
+                                        fontFamily: "Roboto",
+                                        color: "rgba(5,5,5,0.77)",
                                         fontWeight: "700"
                                     }}
                                     linkStyles={{
@@ -96,50 +99,13 @@ const Html = () => {
                                         fontWeight: "700"
                                     }}
 
-                                    backgroundImage={alex}
-                                    siteTitle="alex smith"
-                                    myLink="https://www.w3schools.com/cssref/pr_background-image.asp"
-                                    originalLink='https://www.w3schools.com/cssref/pr_background-image.asp'
-                                    githubLink="https://www.w3schools.com/cssref/pr_background-image.asp"
+                                    backgroundImage={pofo1}
+                                    siteTitle="POFO first project"
+                                    myLink="https://pofo-first.netlify.app/"
+                                    originalLink='http://www.themezaa.com/html/pofo/home-classic-digital-agency.html'
+                                    githubLink="https://github.com/PaulinaMurzanska/Pofo1.git"
                                 />
-                                  <HtmlSingleProject
-                                    fontStyles={{
-                                        fontSize: "1.5rem",
-                                        fontFamily: "Oxygen, sans-serif",
-                                        color: "#ff724c",
-                                        fontWeight: "700"
-                                    }}
-                                    linkStyles={{
-                                        fontSize: "1rem",
-                                        fontFamily: "Oxygen, sans-serif",
-                                        fontWeight: "700"
-                                    }}
 
-                                    backgroundImage={alex}
-                                    siteTitle="alex smith"
-                                    myLink="https://www.w3schools.com/cssref/pr_background-image.asp"
-                                    originalLink='https://www.w3schools.com/cssref/pr_background-image.asp'
-                                    githubLink="https://www.w3schools.com/cssref/pr_background-image.asp"
-                                />
-                                  <HtmlSingleProject
-                                    fontStyles={{
-                                        fontSize: "1.5rem",
-                                        fontFamily: "Oxygen, sans-serif",
-                                        color: "#ff724c",
-                                        fontWeight: "700"
-                                    }}
-                                    linkStyles={{
-                                        fontSize: "1rem",
-                                        fontFamily: "Oxygen, sans-serif",
-                                        fontWeight: "700"
-                                    }}
-
-                                    backgroundImage={alex}
-                                    siteTitle="alex smith"
-                                    myLink="https://www.w3schools.com/cssref/pr_background-image.asp"
-                                    originalLink='https://www.w3schools.com/cssref/pr_background-image.asp'
-                                    githubLink="https://www.w3schools.com/cssref/pr_background-image.asp"
-                                />
                             </div>
                             <div className="ex">
                                 <Link to={ROUTE_ABOUT}>

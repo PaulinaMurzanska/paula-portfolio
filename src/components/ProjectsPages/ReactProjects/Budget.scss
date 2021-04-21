@@ -41,6 +41,7 @@
     .demo-image-wrapper {
       box-shadow: -6px 1px 7px 0px rgba(151, 132, 132, 0.75);
       position: relative;
+      border-radius: 10px;
 
       &::after {
         font-family: "Font Awesome 5 Free";

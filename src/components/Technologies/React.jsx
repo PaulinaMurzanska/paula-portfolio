@@ -50,12 +50,12 @@ const AboutReact = () => {
 
                                 />
                             </div>
-                             <div className="ex">
-                                    <Link to={ROUTE_ABOUT}>
-                                        <ImCross/>
+                            <div className="ex">
+                                <Link to={ROUTE_ABOUT}>
+                                    <ImCross/>
 
-                                    </Link>
-                                </div>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

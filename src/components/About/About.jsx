@@ -16,29 +16,10 @@ import {Link} from "react-router-dom";
 import {ROUTE_HTML, ROUTE_JS, ROUTE_REACT, ROUTE_SASS, ROUTE_SKILLS} from "Constants/Routes";
 
 class About extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            skillOpen: false,
-        }
-    }
-
-    handleClick = () => {
-        this.setState({
-            skillOpen: true,
-        });
-    }
-    handleClose = () => {
-        this.setState({
-            skillOpen: false,
-        })
-    }
-
 
     render() {
+        const{skillOpen,handleClick,handleCLose}=this.props;
         const text = "onClick={clickHereToOpen}";
-        const {skillOpen} = this.state;
-
 
         return (
             <React.Fragment>
@@ -81,7 +62,7 @@ class About extends React.Component {
 
                                 <p> So what actually are my skills?</p>
                                 <span className='clickable'
-                                      onClick={this.handleClick}
+                                      onClick={handleClick}
                                 >{text}</span>
 
 
@@ -94,12 +75,15 @@ class About extends React.Component {
                                 />
                                 <SkillsSmall icon={js}
                                              path={ROUTE_JS}
+
                                 />
                                 <SkillsSmall icon={sass}
                                              path={ROUTE_SASS}
+
                                 />
                                 <SkillsSmall icon={html}
-                                path={ROUTE_HTML}
+                                             path={ROUTE_HTML}
+
                                 />
                                 <SkillsSmall icon={django}/>
                                 <SkillsSmall icon={drf}/>
@@ -107,7 +91,7 @@ class About extends React.Component {
                                 <SkillsSmall icon={css}/>
                                 <div className="ex">
                                     <ImCross
-                                        onClick={this.handleClose}
+                                        onClick={handleCLose}
                                     />
                                 </div>
                             </div>
