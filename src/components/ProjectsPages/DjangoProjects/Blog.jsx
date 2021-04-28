@@ -19,7 +19,7 @@ const Blog = ({path}) => {
                         <div className="inner-container">
                             <div className='description'>
                                 <div className="description-text">
-                                    <h2>Enjoy your stay!- blog site</h2>
+                                    <h2>Enjoy your stay! - blog site</h2>
                                     <p> This is project that I have created by my own, with all available knowledge that
                                         I gain
                                         during the bootcamp and resources in the Internet. It is an example of blog

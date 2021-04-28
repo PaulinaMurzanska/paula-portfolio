@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter, Switch, Route,} from "react-router-dom";
 import {
     ROUTE_ABOUT, ROUTE_BEAUTYLINE, ROUTE_BLOG, ROUTE_BUDGET,
-    ROUTE_CONTACT, ROUTE_DJANGO,
+    ROUTE_CONTACT, ROUTE_DJANGO, ROUTE_DRF,
     ROUTE_EDUCATION, ROUTE_HTML, ROUTE_JS,
     ROUTE_MAIN, ROUTE_PLANTATION,
     ROUTE_PROJECTS, ROUTE_REACT, ROUTE_SASS,
@@ -29,6 +29,7 @@ import Html from "components/Technologies/Html";
 import Django from "components/Technologies/Django";
 import BeautyLine from "components/ProjectsPages/DjangoProjects/BeautyLine";
 import Blog from "components/ProjectsPages/DjangoProjects/Blog";
+import Drf from "components/Technologies/Drf";
 
 class Main extends React.PureComponent {
     constructor(props) {
@@ -130,6 +131,10 @@ class Main extends React.PureComponent {
                  <Route exact path={ROUTE_BLOG}>
                     <NavLeft/>
                     <Blog/>
+                </Route>
+                <Route exact path={ROUTE_DRF}>
+                    <NavLeft/>
+                      <Drf/>
                 </Route>
             </Switch>
 
