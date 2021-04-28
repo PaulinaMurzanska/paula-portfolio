@@ -15,7 +15,7 @@ const Sass = () => {
                 <div className="pages-container">
                     <div className="container-text">
                         <div className="inner-container">
-                            <div className='react-logo'>
+                            <div className='details-logo'>
                                 <img src={sassLogo}/>
                             </div>
                             <SkillDetail

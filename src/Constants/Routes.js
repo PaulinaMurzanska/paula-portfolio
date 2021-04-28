@@ -11,6 +11,9 @@ const ROUTE_PLANTATION='/details/react/plantation';
 const ROUTE_JS="/details/javascript";
 const ROUTE_SASS="/details/sass";
 const ROUTE_HTML="/details/html";
+const ROUTE_DJANGO="/details/django";
+const ROUTE_BEAUTYLINE="/details/django/beautyline";
+const ROUTE_BLOG="/details/django/enjoyyourstay";
 
 export {
     ROUTE_MAIN,
@@ -26,4 +29,7 @@ export {
     ROUTE_JS,
     ROUTE_SASS,
     ROUTE_HTML,
+    ROUTE_DJANGO,
+    ROUTE_BEAUTYLINE,
+    ROUTE_BLOG,
 }

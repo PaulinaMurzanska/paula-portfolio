@@ -7,16 +7,20 @@
   box-shadow: 0px -1px 15px 3px #9E9E9E;
   position: relative;
   border-radius: 10px;
-  &::after{
-     font-family: "Font Awesome 5 Free";
-      content: "\f00e";
-      font-weight: 900;
-      font-size: 20px;
-      color: #5e5a5a;
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00e";
+    font-weight: 900;
+    font-size: 20px;
+    color: #5e5a5a;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 6;
   }
 
   &:hover {
@@ -29,14 +33,17 @@
   .project-item-logo {
     width: 230px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    margin: 5px auto;
+   
 
 
     img {
       width: 200px;
       height: 100px;
-      object-fit: cover;
+      object-fit: contain;
+      transform: scale(1.2);
 
     }
   }
@@ -44,12 +51,11 @@
   .project-item-screen {
     width: 100%;
     overflow: hidden;
-    margin: 5px auto;
     text-align: center;
 
     img {
       height: 250px;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 

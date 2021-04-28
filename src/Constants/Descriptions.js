@@ -61,6 +61,29 @@ const htmlDisclaimer="A little disclaimer here...those are websites ideas taken 
     "of those projects, as you will see it is a copy of someone else's websites.Nevertheless, the code beneath is 100% " +
     "written by myself. The purpose of creating those sites was purely to practice my skills for HTML, jQuery and SCC/SASS.";
 
+const aboutDjango="During the bootcamp I had learned how to create web application using Django. I'm familiar with " +
+    "basics of this framework. Below you will find some projects I had created during the bootcamp lead by our tutor, and also my own project " +
+    "written by myself. I see  many benefits of using this technology. I would like gradually develop my skills " +
+    "within this framework, although it's not something I'm mostly focused on, at the moment, but I know the knowledge I already have, is a strong core" +
+    " for further development " +
+    "with this area. Here are some features of Django I feel comfortable with at this level of my education: ";
+const djangoList=[
+    "Creating new projects, new apps",
+    "Creating models, views, urls",
+    "Adding html templates, and using the 'base template' for whole app ",
+    "Adding static files",
+    "Integration with Sass, JS, jQuery",
+    "Creating multiple app within one project",
+    "Model fields properties",
+    "Class inheritance for models",
+    "Creating mixins",
+    "Document structure",
+    "Implementing simple Python solutions",
+    "Preparing project for server deployment (Heroku)",
+];
+const aboutDjangoSecond='Please take a closer look to the projects below.';
+
+
 export{
     aboutReact,
     reactList,
@@ -69,5 +92,8 @@ export{
     aboutJavaScript,
     aboutSass,
     aboutHtml,
-    htmlDisclaimer
+    htmlDisclaimer,
+    aboutDjango,
+    djangoList,
+    aboutDjangoSecond,
 }
