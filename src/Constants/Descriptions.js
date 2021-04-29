@@ -79,10 +79,29 @@ const djangoList=[
     "Creating mixins",
     "Document structure",
     "Implementing simple Python solutions",
+    "Awareness of importance the CSRF with forms",
     "Preparing project for server deployment (Heroku)",
 ];
 const aboutDjangoSecond='Please take a closer look to the projects below.';
-
+const aboutDRF=" Django Restful Framework is for me very easy and quick way for building endpoints  that can be useful " +
+    "for front end applications, like those I've build for my React apps. Not only it gives database where you can keep records " +
+    "from your front end site, but also solves the users management system. I find it very easy to understand and build. " +
+    "At this point, I can build my own simple API, but still there is much more for me to learn in this area of coding. "+
+    "The features I am familiar with, are:" ;
+const drfList=[
+    "Creating new projects",
+    "Creating multiple app inside one project",
+    "How routing works",
+    "Solving CORS issues",
+    "Creating models",
+    "Creating serializers",
+    "Media files usage",
+    "Creating mixins",
+    "Authentication classes",
+    "Server deployment",
+];
+const aboutDrfSecond = " Below you fill find links to my projects, as well as the source code on Github. To sing in we use the same " +
+    "credentials as we use to log in to my React app, as those are parts of the same projects.";
 
 export{
     aboutReact,
@@ -96,4 +115,7 @@ export{
     aboutDjango,
     djangoList,
     aboutDjangoSecond,
+    drfList,
+    aboutDRF,
+    aboutDrfSecond,
 }
