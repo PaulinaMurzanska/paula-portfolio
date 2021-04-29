@@ -100,7 +100,7 @@ const drfList=[
     "Authentication classes",
     "Server deployment",
 ];
-const aboutDrfSecond = " Below you fill find links to my projects, as well as the source code on Github. To sing in we use the same " +
+const aboutDrfSecond = " Below you will find links to my projects, as well as the source code on Github. To sign in we use the same " +
     "credentials as we use to log in to my React app, as those are parts of the same projects.";
 
 export{

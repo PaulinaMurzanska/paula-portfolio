@@ -13,7 +13,16 @@ import python from "../../images/python.png";
 import css from "../../images/css.png"
 import {ImCross} from "react-icons/im";
 import {Link} from "react-router-dom";
-import {ROUTE_DJANGO, ROUTE_DRF, ROUTE_HTML, ROUTE_JS, ROUTE_REACT, ROUTE_SASS, ROUTE_SKILLS} from "Constants/Routes";
+import {
+    ROUTE_CSS,
+    ROUTE_DJANGO,
+    ROUTE_DRF,
+    ROUTE_HTML,
+    ROUTE_JS,
+    ROUTE_REACT,
+    ROUTE_SASS,
+    ROUTE_SKILLS
+} from "Constants/Routes";
 
 class About extends React.Component {
 
@@ -92,7 +101,9 @@ class About extends React.Component {
                                 path={ROUTE_DRF}
                                 />
                                 <SkillsSmall icon={python}/>
-                                <SkillsSmall icon={css}/>
+                                <SkillsSmall icon={css}
+                                path={ROUTE_CSS}
+                                />
                                 <div className="ex">
                                     <ImCross
                                         onClick={handleCLose}

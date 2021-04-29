@@ -1,33 +1,72 @@
 @import '../../scss/variables';
 
-.drf-card {
-  padding: 15px;
+.drf-card-wrapper {
+  position: relative;
   margin: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  box-shadow: $projectBoxShadowAllBorders;
+   &:hover {
+      transform: scale(1.1);
+     transition: .3s;
+    }
+   &::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00e";
+    font-weight: 900;
+    font-size: 20px;
+    color: #5e5a5a;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 6;
+  }
+
+  .drf-card {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: $projectBoxShadowAllBorders;
+    width: 300px;
+    height: 250px;
 
 
-  .login-title {
-    width: 250px;
-    height: 100px;
-    text-align: center;
 
-    img {
-      height: 100%;
+    .login-title {
+      width: 250px;
+      height: 100px;
+      text-align: center;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .drf-screen {
+      width: 250px;
+
+      img {
+        width: 100%;
+      }
     }
   }
 
-  .drf-screen {
-    width: 250px;
-
-    img {
-      width: 100%;
+  .drf-github {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    a{
+      color: $textColor;
+      font-size: 1.5rem;
+      &:hover{
+        font-size: 2rem;
+        transition: 0.3s;
+      }
     }
   }
 }
+
+
+
 
 
 

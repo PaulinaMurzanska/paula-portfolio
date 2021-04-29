@@ -53,7 +53,6 @@ const AboutReact = () => {
                             <div className="ex">
                                 <Link to={ROUTE_ABOUT}>
                                     <ImCross/>
-
                                 </Link>
                             </div>
                         </div>

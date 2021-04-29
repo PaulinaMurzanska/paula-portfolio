@@ -14,8 +14,6 @@ const ProjectItem = ({title, projectLogo, projectScreen,path}) => {
                     <img src={projectScreen}/>
                 </div>
             </Link>
-
-
         </div>
     )
 
