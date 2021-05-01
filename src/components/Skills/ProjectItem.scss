@@ -37,7 +37,6 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-   
 
 
     img {
@@ -50,13 +49,15 @@
   }
 
   .project-item-screen {
-    width: 100%;
+    max-width: 280px;
     overflow: hidden;
     text-align: center;
+    object-fit: cover;
+
 
     img {
       height: 250px;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
 

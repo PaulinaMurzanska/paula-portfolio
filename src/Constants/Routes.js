@@ -16,6 +16,8 @@ const ROUTE_BEAUTYLINE="/details/django/beautyline";
 const ROUTE_BLOG="/details/django/enjoyyourstay";
 const ROUTE_DRF="/details/drf";
 const ROUTE_CSS="/details/css";
+const ROUTE_PYTHON="/details/python";
+
 
 
 export {
@@ -37,4 +39,5 @@ export {
     ROUTE_BLOG,
     ROUTE_DRF,
     ROUTE_CSS,
+    ROUTE_PYTHON
 }

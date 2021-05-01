@@ -18,7 +18,7 @@ import {
     ROUTE_DJANGO,
     ROUTE_DRF,
     ROUTE_HTML,
-    ROUTE_JS,
+    ROUTE_JS, ROUTE_PYTHON,
     ROUTE_REACT,
     ROUTE_SASS,
     ROUTE_SKILLS
@@ -100,7 +100,9 @@ class About extends React.Component {
                                 <SkillsSmall icon={drf}
                                 path={ROUTE_DRF}
                                 />
-                                <SkillsSmall icon={python}/>
+                                <SkillsSmall icon={python}
+                                path={ROUTE_PYTHON}
+                                />
                                 <SkillsSmall icon={css}
                                 path={ROUTE_CSS}
                                 />

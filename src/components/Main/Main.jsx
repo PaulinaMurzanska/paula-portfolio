@@ -5,7 +5,7 @@ import {
     ROUTE_CONTACT, ROUTE_CSS, ROUTE_DJANGO, ROUTE_DRF,
     ROUTE_EDUCATION, ROUTE_HTML, ROUTE_JS,
     ROUTE_MAIN, ROUTE_PLANTATION,
-    ROUTE_PROJECTS, ROUTE_REACT, ROUTE_SASS,
+    ROUTE_PROJECTS, ROUTE_PYTHON, ROUTE_REACT, ROUTE_SASS,
     ROUTE_SKILLS,
     ROUTE_WORK
 } from "Constants/Routes";
@@ -31,6 +31,7 @@ import BeautyLine from "components/ProjectsPages/DjangoProjects/BeautyLine";
 import Blog from "components/ProjectsPages/DjangoProjects/Blog";
 import Drf from "components/Technologies/Drf";
 import Css from "components/Technologies/Css";
+import Python from "components/Technologies/Python";
 
 class Main extends React.PureComponent {
     constructor(props) {
@@ -140,6 +141,10 @@ class Main extends React.PureComponent {
                  <Route exact path={ROUTE_CSS}>
                     <NavLeft/>
                       <Css/>
+                </Route>
+                    <Route exact path={ROUTE_PYTHON}>
+                    <NavLeft/>
+                      <Python/>
                 </Route>
             </Switch>
 

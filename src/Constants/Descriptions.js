@@ -63,8 +63,8 @@ const htmlDisclaimer="A little disclaimer here...those are websites ideas taken 
 
 const aboutDjango="During the bootcamp I had learned how to create web application using Django. I'm familiar with " +
     "basics of this framework. Below you will find some projects I had created during the bootcamp lead by our tutor, and also my own project " +
-    "written by myself. I see  many benefits of using this technology. I would like gradually develop my skills " +
-    "within this framework, although it's not something I'm mostly focused on, at the moment, but I know the knowledge I already have, is a strong core" +
+    "written by myself. I see  many benefits of using this technology. I would like to gradually develop my skills " +
+    "within this framework, although it's not something I'm mostly focused on, at the moment, but I know, the knowledge I already have, is a strong core" +
     " for further development " +
     "with this area. Here are some features of Django I feel comfortable with at this level of my education: ";
 const djangoList=[
@@ -102,6 +102,21 @@ const drfList=[
 ];
 const aboutDrfSecond = " Below you will find links to my projects, as well as the source code on Github. To sign in we use the same " +
     "credentials as we use to log in to my React app, as those are parts of the same projects.";
+const aboutCss="CSS is inseparable part of beeing front end developer. In almost every project presented on this site, you can see the level of my skills" +
+    " within this area. I feel quite comfortable with styling, I know there are many things that I need to learn, but also I know how to search for solutions. " +
+    "I need more experience in creating animations, and hopefully I will implement this new features in my future projects very soon. CSS is very rapidly developing" +
+    " tool, and I'm looking forward for new features issued in future. In my present work though, I 'm using mostly SASS, as I find it more convenient way for writing styles.";
+const aboutPython = " Python is programming language I have started to learn as a first. I have learned all the basics of this language and how to solve " +
+    "simple exercises " +
+    "like writing code for Fibonacci sequence or factorials outcome. " +
+    "I am also familiar with properties of arrays, tuples, data types etc. " ;
+
+const aboutPythonSecond=  "To be frank, at the beginning it wasn't very clear for me what possibilities this knowledge gives. It became clear for me, when I stated to use Java Script" +
+    " to solve problems that occur during development of my apps. I know, I know.. JS is programming language for front end development... but the scheme " +
+    "of data management " +
+    "remains the same. Language is different, but when it comes to " +
+    "handling data, the core understanding how it works stays the same. I can't say that at the moment I'm Python developer, but I want you to know," +
+    " that I have basic knowledge in this language, that I would like to develop in my work if I had chance to do so. ";
 
 export{
     aboutReact,
@@ -118,4 +133,7 @@ export{
     drfList,
     aboutDRF,
     aboutDrfSecond,
+    aboutCss,
+    aboutPython,
+    aboutPythonSecond,
 }
