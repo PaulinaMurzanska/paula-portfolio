@@ -5,7 +5,7 @@ import plantationLogo from "../../images/Plantation-Logo-layout-1.jpg";
 import plantationScreen from "../../images/plantationscreen.png";
 import budgetLogo from "../../images/homebudgetlogo.png";
 import budgetScreen from "../../images/budgetscreen.png";
-import ProjectItem from "components/Skills/ProjectItem";
+import ProjectItem, {ProjectItemPortfolio} from "components/Skills/ProjectItem";
 import portfolioTheme  from '../../images/milad-b-fakurian-2sICkGsJRQY-unsplash.jpg';
 import '../../scss/pageContainer.scss';
 import './React.scss';
@@ -43,11 +43,10 @@ const AboutReact = () => {
                                     path={ROUTE_PLANTATION}
 
                                 />
-                                <ProjectItem
-                                    title='Home Budget'
-                                    projectLogo={""}
+                                <ProjectItemPortfolio
+                                    title='My Portfolio Site'
                                     projectScreen={portfolioTheme}
-                                    path={ROUTE_BUDGET}
+                                    path={ROUTE_ABOUT}
 
                                 />
                             </div>

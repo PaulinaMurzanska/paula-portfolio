@@ -1,5 +1,14 @@
 @import '../../scss/variables';
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .welcome-container {
   width: 80%;
   margin: 0 auto;
@@ -17,6 +26,10 @@
       padding: 25px 10px;
       position: relative;
       //transform: rotate(15deg);
+      //animation-name: spin;
+      //animation-duration:10s;
+      //animation-iteration-count: infinite;
+      //animation-timing-function: linear;
 
 
       .circle {
@@ -28,7 +41,11 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: rotate(20deg) translate(-65%, -25%);
+        //transform: rotate(20deg) translate(-65%, -25%);
+        animation-name: spin;
+        animation-duration: 30s;
+        animation-iteration-count:infinite;
+        animation-timing-function: linear;
 
 
         li {
