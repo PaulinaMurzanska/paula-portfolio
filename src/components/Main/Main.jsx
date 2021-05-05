@@ -96,10 +96,6 @@ class Main extends React.PureComponent {
                     <NavLeft/>
                     <Contact/>
                 </Route>
-                <Route exact path={ROUTE_SKILLS}>
-                    <NavLeft/>
-                    <SkillDetail/>
-                </Route>
                 <Route exact path={ROUTE_REACT}>
                     <NavLeft/>
                     <AboutReact

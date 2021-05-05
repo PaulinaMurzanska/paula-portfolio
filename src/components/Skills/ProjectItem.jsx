@@ -1,7 +1,6 @@
 import React from "react";
 import './ProjectItem.scss';
 import {Link} from "react-router-dom";
-import {ROUTE_PROJECTS} from "Constants/Routes";
 import {GoMarkGithub} from "react-icons/go";
 
 

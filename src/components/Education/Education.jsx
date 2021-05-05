@@ -1,7 +1,7 @@
 import React from "react";
 import '../../scss/pageContainer.scss';
 import SchoolBlock from "components/Education/SchoolBlock";
-import uek from '../../images/uek.jpg';
+import uek from '../../images/ueknew.jpg';
 import codeb from "../../images/yellow bus.png";
 import lo from "../../images/lo.jpeg";
 

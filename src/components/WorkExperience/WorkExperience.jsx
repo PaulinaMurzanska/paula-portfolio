@@ -1,10 +1,10 @@
 import React from "react";
 import '../../scss/pageContainer.scss';
 import SchoolBlock from "components/Education/SchoolBlock";
-import zulian from '../../images/zulian.png';
-import yarden from "../../images/yarden.jpg";
+import zulian from '../../images/zul.jpg';
+import yarden from "../../images/yarden2.jpg";
 import daniel from "../../images/daniel.jpg";
-import {yardenList} from "Constants/Descriptions";
+import {bbList, yardenList, zulList} from "Constants/Descriptions";
 
 const Work = () => {
     return (
@@ -24,7 +24,7 @@ const Work = () => {
                                     degree2=""
                                     subject2=''
                                     additionalClass=""
-                                    workList={[]}
+                                    workList={zulList}
 
                                 />
                                 <SchoolBlock
@@ -52,7 +52,7 @@ const Work = () => {
                                     degree2=""
                                     subject2=''
                                     additionalClass=""
-                                    workList={[1,2,3]}
+                                    workList={bbList}
                                 />
                             </div>
                         </div>

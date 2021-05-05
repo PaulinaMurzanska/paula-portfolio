@@ -38,6 +38,11 @@
     justify-content: center;
     overflow: hidden;
 
+    h1{
+      margin:40px auto;
+
+    }
+
 
     img {
       width: 200px;
@@ -51,13 +56,10 @@
   .project-item-screen {
     max-width: 280px;
     overflow: hidden;
-    text-align: center;
-    object-fit: cover;
-
-
     img {
       height: 250px;
       object-fit: cover;
+
     }
   }
 

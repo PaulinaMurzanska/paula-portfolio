@@ -45,10 +45,6 @@ const NavLeft = () => {
                         name='contact'
                         path={ROUTE_CONTACT}
                     />
-                    <AppNavItem
-                        name='skills'
-                        path={ROUTE_SKILLS}
-                    />
                 </div>
                 <div className='socials'>
                     <FaFacebookF/>
