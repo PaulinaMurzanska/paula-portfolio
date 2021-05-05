@@ -1,7 +1,9 @@
 import React from "react";
 import './SchoolBlock.scss';
+import DetailsList from "components/Skills/DetailsList";
 
-const SchoolBlock = ({imageUlr,schoolNameText, additionalClass,schoolNameText2,schoolName, reversed, degree1, subject1, degree2, subject2}) => {
+const SchoolBlock = ({imageUlr,schoolNameText, additionalClass,schoolNameText2,schoolName, reversed, degree1, subject1,
+                         workList,degree2, subject2}) => {
     return (
         <React.Fragment>
 
@@ -24,6 +26,20 @@ const SchoolBlock = ({imageUlr,schoolNameText, additionalClass,schoolNameText2,s
                         <h3>{degree2}</h3>
                         <h4>{subject2}</h4>
                     </div>
+                    {
+                        workList.length > 0 &&
+                        (
+                            <ul>
+                                {
+                                    workList.map((item,index)=>
+                                    <DetailsList
+                                        item={item}/>
+                                    )
+                                }
+
+                            </ul>
+                        )
+                    }
 
                 </div>
             </div>

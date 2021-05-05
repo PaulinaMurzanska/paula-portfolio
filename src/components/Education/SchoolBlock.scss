@@ -1,7 +1,6 @@
 @import "../../scss/variables";
 
 .school-block {
-  border: 1px solid gray;
   display: flex;
   flex-direction: row;
   min-height: 200px;
@@ -15,11 +14,9 @@
   .image-block {
     width: 50%;
     background-size: cover;
-    //background-clip: padding-box;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    //height: 300px;
     &.codebr{
       background-size: auto;
     }

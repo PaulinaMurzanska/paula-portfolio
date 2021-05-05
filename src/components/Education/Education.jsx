@@ -23,6 +23,8 @@ const Education = () => {
                                     degree2=""
                                     subject2=''
                                     additionalClass="codebr"
+                                    workList={[]}
+
                                 />
                                 <SchoolBlock
                                     imageUlr={uek}
@@ -35,8 +37,11 @@ const Education = () => {
                                     degree2="Bachelor of Economics | 2006 - 2010"
                                     subject2='Specialization: International Economic Relations'
                                     additionalClass=""
+                                    workList={[]}
+
+
                                 />
-                                   <SchoolBlock
+                                <SchoolBlock
                                     imageUlr={lo}
                                     schoolName="I LO im. T.Kościuszki in Myślenice"
                                     reversed={true}
@@ -47,6 +52,8 @@ const Education = () => {
                                     degree2=""
                                     subject2=''
                                     additionalClass=""
+                                    workList={[]}
+
                                 />
                             </div>
                         </div>

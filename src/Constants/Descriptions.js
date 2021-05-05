@@ -117,6 +117,26 @@ const aboutPythonSecond=  "To be frank, at the beginning it wasn't very clear fo
     "remains the same. Language is different, but when it comes to " +
     "handling data, the core understanding how it works stays the same. I can't say that at the moment I'm Python developer, but I want you to know," +
     " that I have basic knowledge in this language, that I would like to develop in my work if I had chance to do so. ";
+const aboutGit =" From the beginning of my learning path, I work with Git. I had chance to use this tool not only to my individual work, but also as " +
+    "a part of a team, where I had  to work on individual branch, create new ones, switch between them, sometimes merge versions. For most " +
+    "of cases I keep my code on GitHub, and use Git log storage on my code editor, to review versions. I feel quite comfortable using all the basic " +
+    " git commands, still need a little more practice with advanced features." ;
+const aboutEditors= "I use simultaneously PyCharm Professional and Visual Studio Code. I find some projects easier to " +
+    "code in one IDE than in another, that is why I use both of them. " ;
+const aboutEditorsSecond= " My main operating system I usually work every day is Windows, but for my most recent projects " +
+    "I had been using Ubuntu as Virtual Machine installed on my Windows. I find Ubuntu more 'programmer friendly' for " +
+    " project that aren't just a static websites."
+const yardenList=[
+    "General management of all areas of a hotel industry such as an internal HR management and coordinating team of 35 employees.",
+"Sales and marketing on an international field, customer relations.",
+    "Financial settlements with business partners.",
+"Conducting financial anlyzes.",
+"Creating and implementing procedures.",
+"Responsibility for facility technical maintenance.",
+"Problem solving and representative function."
+]
+
+
 
 export{
     aboutReact,
@@ -136,4 +156,8 @@ export{
     aboutCss,
     aboutPython,
     aboutPythonSecond,
+    aboutGit,
+    aboutEditors,
+    aboutEditorsSecond,
+    yardenList,
 }

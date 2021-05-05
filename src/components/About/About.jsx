@@ -10,13 +10,16 @@ import html from "../../images/html.png";
 import django from "../../images/django.png";
 import drf from "../../images/djangorest.png";
 import python from "../../images/python.png";
-import css from "../../images/css.png"
+import css from "../../images/css.png";
+import git from "../../images/git2.svg";
+import pycharm from "../../images/Pycharm-01.png";
+import visual from "../../images/Visual-studio-code-02.png";
+import ubuntu from '../../images/Ubuntu-03.png';
 import {ImCross} from "react-icons/im";
-import {Link} from "react-router-dom";
 import {
     ROUTE_CSS,
     ROUTE_DJANGO,
-    ROUTE_DRF,
+    ROUTE_DRF, ROUTE_EDITOR, ROUTE_GIT,
     ROUTE_HTML,
     ROUTE_JS, ROUTE_PYTHON,
     ROUTE_REACT,
@@ -105,6 +108,18 @@ class About extends React.Component {
                                 />
                                 <SkillsSmall icon={css}
                                 path={ROUTE_CSS}
+                                />
+                                <SkillsSmall icon={git}
+                                path={ROUTE_GIT}
+                                />
+                                <SkillsSmall icon={pycharm}
+                                path={ROUTE_EDITOR}
+                                />
+                                <SkillsSmall icon={visual}
+                                path={ROUTE_EDITOR}
+                                />
+                                 <SkillsSmall icon={ubuntu}
+                                path={ROUTE_EDITOR}
                                 />
                                 <div className="ex">
                                     <ImCross

@@ -1,8 +1,65 @@
-import React from 'react';
+import React from "react";
+import '../../scss/pageContainer.scss';
+import SchoolBlock from "components/Education/SchoolBlock";
+import zulian from '../../images/zulian.png';
+import yarden from "../../images/yarden.jpg";
+import daniel from "../../images/daniel.jpg";
+import {yardenList} from "Constants/Descriptions";
 
-const WorkExperience = ()=>{
-    return(
-        <p>resume</p>
+const Work = () => {
+    return (
+        <React.Fragment>
+            <div className="pages">
+                <div className="pages-container">
+                    <div className="container-text">
+                        <div className="inner-container education">
+                            <div className="education-site-wrapper">
+                                <SchoolBlock
+                                    imageUlr={zulian}
+                                    schoolName="Zulian Aparthotel"
+                                    reversed={true}
+                                    schoolNameText="Apartments Group"
+                                    degree1="Hotel manager | April 2021 - Present"
+                                    subject1='Zulian Aparthotel'
+                                    degree2=""
+                                    subject2=''
+                                    additionalClass=""
+                                    workList={[]}
+
+                                />
+                                <SchoolBlock
+                                    imageUlr={yarden}
+                                    schoolName="Yarden Hotel"
+                                    reversed={false}
+                                    schoolNameText="Apartments Group"
+                                    schoolNameText2=""
+                                    degree1="Hotel manager | 2013 - Present"
+                                    subject1='Yarden Hotel'
+                                    degree2=""
+                                    subject2=''
+                                    additionalClass=""
+                                    workList={yardenList}
+
+                                />
+                                <SchoolBlock
+                                    imageUlr={daniel}
+                                    schoolName="Blue Bells Apartments"
+                                    reversed={true}
+                                    schoolNameText="Apartments Group"
+                                    schoolNameText2=""
+                                    degree1="Apartments manager | 2010 - 2013"
+                                    subject1='Blue Bells Apartments'
+                                    degree2=""
+                                    subject2=''
+                                    additionalClass=""
+                                    workList={[1,2,3]}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </React.Fragment>
     )
 }
-export default WorkExperience;
+export default Work;

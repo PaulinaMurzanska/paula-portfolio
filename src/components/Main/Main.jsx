@@ -2,8 +2,8 @@ import React from 'react';
 import {BrowserRouter, Switch, Route,} from "react-router-dom";
 import {
     ROUTE_ABOUT, ROUTE_BEAUTYLINE, ROUTE_BLOG, ROUTE_BUDGET,
-    ROUTE_CONTACT, ROUTE_CSS, ROUTE_DJANGO, ROUTE_DRF,
-    ROUTE_EDUCATION, ROUTE_HTML, ROUTE_JS,
+    ROUTE_CONTACT, ROUTE_CSS, ROUTE_DJANGO, ROUTE_DRF, ROUTE_EDITOR,
+    ROUTE_EDUCATION, ROUTE_GIT, ROUTE_HTML, ROUTE_JS,
     ROUTE_MAIN, ROUTE_PLANTATION,
     ROUTE_PROJECTS, ROUTE_PYTHON, ROUTE_REACT, ROUTE_SASS,
     ROUTE_SKILLS,
@@ -32,6 +32,9 @@ import Blog from "components/ProjectsPages/DjangoProjects/Blog";
 import Drf from "components/Technologies/Drf";
 import Css from "components/Technologies/Css";
 import Python from "components/Technologies/Python";
+import Git from "components/Technologies/Git";
+import CodeEditor from "components/Technologies/CodeEditor";
+import Work from "components/WorkExperience/WorkExperience";
 
 class Main extends React.PureComponent {
     constructor(props) {
@@ -47,7 +50,7 @@ class Main extends React.PureComponent {
             skillOpen: true,
         })
     }
-      handleClick = () => {
+    handleClick = () => {
         this.setState({
             skillOpen: true,
         });
@@ -60,7 +63,7 @@ class Main extends React.PureComponent {
     }
 
     render() {
-        const{skillOpen}=this.state;
+        const {skillOpen} = this.state;
         console.log(skillOpen);
         return (
 
@@ -72,9 +75,9 @@ class Main extends React.PureComponent {
                 <Route exact path={ROUTE_ABOUT}>
                     <NavLeft/>
                     <About
-                    handleClick={this.handleClick}
-                    skillOpen={skillOpen}
-                    handleCLose={this.handleClose}
+                        handleClick={this.handleClick}
+                        skillOpen={skillOpen}
+                        handleCLose={this.handleClose}
                     />
                 </Route>
                 <Route exact path={ROUTE_PROJECTS}>
@@ -83,7 +86,7 @@ class Main extends React.PureComponent {
                 </Route>
                 <Route exact path={ROUTE_WORK}>
                     <NavLeft/>
-                    <About/>
+                    <Work/>
                 </Route>
                 <Route exact path={ROUTE_EDUCATION}>
                     <NavLeft/>
@@ -126,25 +129,34 @@ class Main extends React.PureComponent {
                     <NavLeft/>
                     <Django/>
                 </Route>
-                  <Route exact path={ROUTE_BEAUTYLINE}>
+                <Route exact path={ROUTE_BEAUTYLINE}>
                     <NavLeft/>
                     <BeautyLine/>
                 </Route>
-                 <Route exact path={ROUTE_BLOG}>
+                <Route exact path={ROUTE_BLOG}>
                     <NavLeft/>
                     <Blog/>
                 </Route>
                 <Route exact path={ROUTE_DRF}>
                     <NavLeft/>
-                      <Drf/>
+                    <Drf/>
                 </Route>
-                 <Route exact path={ROUTE_CSS}>
+                <Route exact path={ROUTE_CSS}>
                     <NavLeft/>
-                      <Css/>
+                    <Css/>
                 </Route>
-                    <Route exact path={ROUTE_PYTHON}>
+                <Route exact path={ROUTE_PYTHON}>
                     <NavLeft/>
-                      <Python/>
+                    <Python/>
+                </Route>
+
+                <Route exact path={ROUTE_GIT}>
+                    <NavLeft/>
+                    <Git/>
+                </Route>
+                 <Route exact path={ROUTE_EDITOR}>
+                    <NavLeft/>
+                    <CodeEditor/>
                 </Route>
             </Switch>
 
