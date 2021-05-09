@@ -3,7 +3,7 @@ import SkillDetail from "components/Skills/SkillDetail";
 import {aboutDjango, aboutDjangoSecond, djangoList,} from "Constants/Descriptions";
 import '../../scss/pageContainer.scss';
 import './React.scss';
-import {ROUTE_ABOUT, ROUTE_BEAUTYLINE, ROUTE_BLOG,} from "Constants/Routes";
+import {ROUTE_ABOUT, ROUTE_BEAUTYLINE, ROUTE_BLOG, ROUTE_SKILLS,} from "Constants/Routes";
 import djangoLogo from "../../images/django.png";
 import {Link} from "react-router-dom";
 import {ImCross} from "react-icons/im";
@@ -41,26 +41,9 @@ const Django = () => {
                                     projectScreen={blogScreen}
                                     path={ROUTE_BLOG}
                                 />
-                                {/*<ProjectItem*/}
-                                {/*    title='Home Plantation'*/}
-                                {/*    projectLogo={plantationLogo}*/}
-                                {/*    projectScreen={plantationScreen}*/}
-                                {/*    path={ROUTE_PLANTATION}*/}
-
-                                {/*/>*/}
-                                {/*<ProjectItem*/}
-                                {/*    title='Home Budget'*/}
-                                {/*    projectLogo={""}*/}
-                                {/*    projectScreen={""}*/}
-                                {/*    path={ROUTE_BUDGET}*/}
-
-                                {/*/>*/}
-
-
-
                             </div>
                             <div className="ex">
-                                <Link to={ROUTE_ABOUT}>
+                                <Link to={ROUTE_SKILLS}>
                                     <ImCross/>
                                 </Link>
                             </div>

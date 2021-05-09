@@ -6,7 +6,12 @@ import '../Header/Header.scss';
 
 const AppNavItem = ({path, name}) => {
     const style = {
-        color: "#9a9494"
+        color: "#575353",
+        fontSize:"1.3rem",
+        paddingLeft:"5px",
+
+
+
     };
     return (
         <NavItem>

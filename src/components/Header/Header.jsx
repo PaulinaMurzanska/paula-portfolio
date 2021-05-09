@@ -27,10 +27,6 @@ const HeaderBar = () => {
                             name='projects'
                             path={ROUTE_PROJECTS}
                         />
-                        {/*<AppNavItem*/}
-                        {/*    name='resume'*/}
-                        {/*    path={ROUTE_RESUME}*/}
-                        {/*/>*/}
                         <AppNavItem
                             name='contact'
                             path={ROUTE_CONTACT}

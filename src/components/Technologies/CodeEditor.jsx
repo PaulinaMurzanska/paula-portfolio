@@ -3,7 +3,7 @@ import SkillDetail from "components/Skills/SkillDetail";
 import {aboutEditors, aboutEditorsSecond, aboutGit} from "Constants/Descriptions";
 import '../../scss/pageContainer.scss';
 import './React.scss';
-import {ROUTE_ABOUT} from "Constants/Routes";
+import {ROUTE_ABOUT, ROUTE_SKILLS} from "Constants/Routes";
 import pycharmLogo from "../../images/Pycharm-01.png";
 import visual from "../../images/Visual-studio-code-02.png";
 import ubuntu from '../../images/Ubuntu-03.png';
@@ -29,7 +29,7 @@ const CodeEditor = () => {
                                 list={[]}
                             />
                             <div className="ex">
-                                <Link to={ROUTE_ABOUT}>
+                                <Link to={ROUTE_SKILLS}>
                                     <ImCross/>
                                 </Link>
                             </div>

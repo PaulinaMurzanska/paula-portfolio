@@ -2,7 +2,7 @@
 
 .menu-side {
   height: 90vh;
-  width: 150px;
+  width: 200px;
   padding: 10px;
   position: fixed;
   top: 20px;
@@ -12,8 +12,10 @@
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 5px 1px 7px 0px rgba(151, 132, 132, 0.75);
-
-  .logo-top {
+  a{
+    text-transform: uppercase;
+    text-decoration: none;
+    .logo-top {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -21,10 +23,13 @@
     font-size: 1.5rem;
     color: $menuLinksColor;
   }
+  }
+
+
 
   .menu-links {
     list-style-type: none;
-    line-height: 2rem;
+    line-height: 3rem;
     font-size: 1.2rem;
     display: flow;
     text-align: left;
@@ -37,9 +42,12 @@
     li {
       a {
         text-decoration: none;
+        color: $textColor;
+        text-transform: uppercase;
+        letter-spacing: 1px;
       }
       &:hover {
-        background-color:  rgba(85, 26, 139, 0.3);;
+        background-color:  rgba(85, 26, 139, 0.3);
       }
     }
   }

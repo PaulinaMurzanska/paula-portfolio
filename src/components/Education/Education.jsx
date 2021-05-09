@@ -4,11 +4,37 @@ import SchoolBlock from "components/Education/SchoolBlock";
 import uek from '../../images/ueknew.jpg';
 import codeb from "../../images/yellow bus.png";
 import lo from "../../images/lo.jpeg";
+import {motion} from "framer-motion";
 
 const Education = () => {
+    const pageVariants = {
+        initial: {
+            opacity: 0,
+            y: 0
+        },
+        in: {
+            opacity: 1,
+            y: 0
+        },
+        out: {
+            opacity: 0,
+            x: "100vw"
+        },
+    };
+    const pageTransition = {
+        duration: .6,
+        stiffness: 100,
+    };
     return (
         <React.Fragment>
-            <div className="pages">
+            <motion.div
+                className="pages"
+                  exit="out" animate="in"
+                initial="initial"
+                variants={pageVariants}
+                transition={pageTransition}
+
+            >
                 <div className="pages-container">
                     <div className="container-text">
                         <div className="inner-container education">
@@ -59,7 +85,7 @@ const Education = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </React.Fragment>
     )
 }

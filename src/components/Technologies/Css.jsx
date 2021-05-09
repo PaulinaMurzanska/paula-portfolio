@@ -3,7 +3,7 @@ import SkillDetail from "components/Skills/SkillDetail";
 import {aboutCss} from "Constants/Descriptions";
 import '../../scss/pageContainer.scss';
 import './React.scss';
-import {ROUTE_ABOUT} from "Constants/Routes";
+import {ROUTE_ABOUT, ROUTE_SKILLS} from "Constants/Routes";
 import cssLogo from "../../images/css.png";
 import {Link} from "react-router-dom";
 import {ImCross} from "react-icons/im";
@@ -24,7 +24,7 @@ const Css = () => {
                                 list={[]}
                             />
                             <div className="ex">
-                                <Link to={ROUTE_ABOUT}>
+                                <Link to={ROUTE_SKILLS}>
                                     <ImCross/>
                                 </Link>
                             </div>

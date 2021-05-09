@@ -1,6 +1,6 @@
 @import './scss/variables';
 
-body{
+body {
   font-size: 12px;
   font-family: $fontFamily;
   background-image: url("./images/milad-b-fakurian-2sICkGsJRQY-unsplash.jpg");
@@ -9,12 +9,10 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-font-family: Montserrat;
+  font-family: Montserrat;
 
 
-
-
-  &::after{
+  &::after {
     content: "";
     border-top: 90vh solid #eae2e2;
     border-right: 300px solid transparent;
@@ -24,6 +22,7 @@ font-family: Montserrat;
     z-index: -1;
 
   }
+
   @media(max-width: 600px) {
     background-position: left;
   }

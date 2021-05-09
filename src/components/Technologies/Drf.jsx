@@ -3,7 +3,7 @@ import SkillDetail from "components/Skills/SkillDetail";
 import {aboutDrfSecond, aboutDRF, drfList,} from "Constants/Descriptions";
 import '../../scss/pageContainer.scss';
 import './React.scss';
-import {ROUTE_ABOUT} from "Constants/Routes";
+import {ROUTE_ABOUT, ROUTE_SKILLS} from "Constants/Routes";
 import {Link} from "react-router-dom";
 import {ImCross} from "react-icons/im";
 import drfLogo from '../../images/drf icon.png';
@@ -44,29 +44,10 @@ const Drf = () => {
                                     drfGithub="https://github.com/PaulinaMurzanska/BudgetDRF"
 
                                 />
-                                {/*  <HtmlSingleProject*/}
-                                {/*    fontStyles={{*/}
-                                {/*        fontSize: "1.5rem",*/}
-                                {/*        fontFamily: "Montserrat",*/}
-                                {/*        color: "rgba(5,5,5,0.77)",*/}
-                                {/*        fontWeight: "700"*/}
-                                {/*    }}*/}
-                                {/*    linkStyles={{*/}
-                                {/*        fontSize: "1rem",*/}
-                                {/*        fontFamily: "Oxygen, sans-serif",*/}
-                                {/*        fontWeight: "700"*/}
-                                {/*    }}*/}
-
-                                {/*    backgroundImage={plantation}*/}
-                                {/*    siteTitle="Home budget"*/}
-                                {/*    myLink="https://fast-dawn-10983.herokuapp.com/"*/}
-                                {/*    originalLink='https://www.site123.com/templates/preview/1223613?aff=248686&sid=wbtemplates'*/}
-                                {/*    githubLink="https://github.com/PaulinaMurzanska/BudgetDRF"*/}
-                                {/*/>*/}
 
                             </div>
                             <div className="ex">
-                                <Link to={ROUTE_ABOUT}>
+                                <Link to={ROUTE_SKILLS}>
                                     <ImCross/>
                                 </Link>
                             </div>

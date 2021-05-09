@@ -9,7 +9,7 @@ import ProjectItem, {ProjectItemPortfolio} from "components/Skills/ProjectItem";
 import portfolioTheme  from '../../images/milad-b-fakurian-2sICkGsJRQY-unsplash.jpg';
 import '../../scss/pageContainer.scss';
 import './React.scss';
-import {ROUTE_ABOUT, ROUTE_BUDGET, ROUTE_PLANTATION, ROUTE_REACT} from "Constants/Routes";
+import {ROUTE_ABOUT, ROUTE_BUDGET, ROUTE_PLANTATION, ROUTE_REACT, ROUTE_SKILLS} from "Constants/Routes";
 import reactLogo from "../../images/reactjs-ar21.svg";
 import {Link} from "react-router-dom";
 import {ImCross} from "react-icons/im";
@@ -51,7 +51,7 @@ const AboutReact = () => {
                                 />
                             </div>
                             <div className="ex">
-                                <Link to={ROUTE_ABOUT}>
+                                <Link to={ROUTE_SKILLS}>
                                     <ImCross/>
                                 </Link>
                             </div>

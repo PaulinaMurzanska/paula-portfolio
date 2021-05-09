@@ -3,7 +3,7 @@ import SkillDetail from "components/Skills/SkillDetail";
 import {aboutHtml, htmlDisclaimer} from "Constants/Descriptions";
 import '../../scss/pageContainer.scss';
 import './React.scss';
-import {ROUTE_ABOUT} from "Constants/Routes";
+import {ROUTE_ABOUT, ROUTE_SKILLS} from "Constants/Routes";
 import htmlLogo from "../../images/html.png";
 import {Link} from "react-router-dom";
 import {ImCross} from "react-icons/im";
@@ -108,7 +108,7 @@ const Html = () => {
 
                             </div>
                             <div className="ex">
-                                <Link to={ROUTE_ABOUT}>
+                                <Link to={ROUTE_SKILLS}>
                                     <ImCross/>
                                 </Link>
                             </div>

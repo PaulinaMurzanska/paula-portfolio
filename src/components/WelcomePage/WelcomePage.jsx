@@ -20,28 +20,28 @@ const WelcomePage = () => {
                 <div className='circle-codes'>
                     <ul className='circle'>
                         <li>
-                            <img src={react}/>
+                            <img src={react} alt="react"/>
                         </li>
                         <li>
-                            <img src={js}/>
+                            <img src={js} alt="js"/>
                         </li>
                         <li>
-                            <img src={sass}/>
+                            <img src={sass} alt="sass"/>
                         </li>
                         <li>
-                            <img src={drf}/>
+                            <img src={drf} alt="drf"/>
                         </li>
                         <li>
-                            <img src={python}/>
+                            <img src={python} alt="python"/>
                         </li>
                         <li>
-                            <img src={django}/>
+                            <img src={django} alt="django"/>
                         </li>
                         <li>
-                            <img src={html}/>
+                            <img src={html} alt="html"/>
                         </li>
                         <li>
-                            <img src={css}/>
+                            <img src={css} alt="css"/>
                         </li>
                         <li className='hello'>
                             <h3><i>&lt;h1&gt; Hello World! &lt;/h1&gt;</i></h3>

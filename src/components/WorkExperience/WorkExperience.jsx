@@ -2,14 +2,39 @@ import React from "react";
 import '../../scss/pageContainer.scss';
 import SchoolBlock from "components/Education/SchoolBlock";
 import zulian from '../../images/zul.jpg';
-import yarden from "../../images/yarden2.jpg";
+import yarden from "../../images/yarden3.jpg";
 import daniel from "../../images/daniel.jpg";
 import {bbList, yardenList, zulList} from "Constants/Descriptions";
+import {motion} from "framer-motion";
 
 const Work = () => {
+    const pageVariants = {
+        initial: {
+            opacity: 0,
+            y: 0
+        },
+        in: {
+            opacity: 1,
+            y: 0
+        },
+        out: {
+            opacity: 0,
+            y: "100vh"
+        },
+    };
+    const pageTransition = {
+        duration: .6,
+        stiffness: 100,
+    };
     return (
         <React.Fragment>
-            <div className="pages">
+            <motion.div
+                className="pages"
+                exit="out" animate="in"
+                initial="initial"
+                variants={pageVariants}
+                transition={pageTransition}
+            >
                 <div className="pages-container">
                     <div className="container-text">
                         <div className="inner-container education">
@@ -58,7 +83,7 @@ const Work = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </React.Fragment>
     )
 }
