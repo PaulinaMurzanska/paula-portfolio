@@ -12,12 +12,43 @@ import budget from '../../images/homebudgetlogo.png';
 import plantationLogin from '../../images/PlantationLoginScreen.png';
 import budgetLogin from '../../images/budgetLoginScreen.png';
 import DrfSingleProjectCard from "components/Technologies/DrfSingleProjectCard";
+import{motion} from "framer-motion";
 
 
 const Drf = () => {
+    const pageVariants = {
+        initial: {
+            opacity: 0,
+
+            x: "100vw",
+
+        },
+        in: {
+            opacity: 1,
+
+            x: 0,
+
+        },
+        out: {
+            opacity: 0,
+            y: "100vh"
+        },
+    };
+    const pageTransition = {
+        duration: 0.4,
+        stiffness: 100,
+    };
+
     return (
         <React.Fragment>
-            <div className="pages">
+            <motion.div
+                className="pages"
+                variants={pageVariants}
+                exit="out"
+                animate="in"
+                initial="initial"
+                transition={pageTransition}
+            >
                 <div className="pages-container">
                     <div className="container-text">
                         <div className="inner-container">
@@ -37,7 +68,7 @@ const Drf = () => {
                                     drfGithub="https://github.com/PaulinaMurzanska/PlantationDRF"
 
                                 />
-                                   <DrfSingleProjectCard
+                                <DrfSingleProjectCard
                                     login={budget}
                                     drfScreen={budgetLogin}
                                     drfUrl='https://fast-dawn-10983.herokuapp.com/'
@@ -54,7 +85,7 @@ const Drf = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </React.Fragment>
     )
 }

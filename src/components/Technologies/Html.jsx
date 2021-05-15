@@ -12,11 +12,40 @@ import alex from '../../images/alexsmith.png';
 import winter from "../../images/winterscreen.png";
 import pofo2 from '../../images/pofo2screen.png';
 import pofo1 from '../../images/pofo1screen.png';
+import {motion} from "framer-motion";
+
 
 const Html = () => {
+    const pageVariants = {
+        initial: {
+            opacity: 0,
+
+            y: "-100vw"
+        },
+        in: {
+            opacity: 1,
+
+            y: 0
+        },
+        out: {
+            opacity: 0,
+            y: "100vh"
+        },
+    };
+    const pageTransition = {
+        duration: 0.4,
+        stiffness: 100,
+    };
     return (
         <React.Fragment>
-            <div className="pages">
+            <motion.div
+                className="pages"
+                variants={pageVariants}
+                exit="out"
+                animate="in"
+                initial="initial"
+                transition={pageTransition}
+            >
                 <div className="pages-container">
                     <div className="container-text">
                         <div className="inner-container">
@@ -115,7 +144,7 @@ const Html = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </React.Fragment>
     )
 }

@@ -3,7 +3,7 @@
 .school-block {
   display: flex;
   flex-direction: row;
-  min-height: 200px;
+  min-height: 350px;
 
 
   &.reversed {
@@ -51,6 +51,7 @@
 
   .details-block {
     width: 50%;
+    padding-top: 20px;
     ul{
       margin: 0 15px 25px ;
 

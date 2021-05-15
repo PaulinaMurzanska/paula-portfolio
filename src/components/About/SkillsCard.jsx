@@ -29,13 +29,14 @@ import ubuntu from "images/Ubuntu-03.png";
 import {ImCross} from "react-icons/im";
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
+import {AnimatePresence} from "framer-motion/dist/framer-motion";
 
 
 const Skills = () => {
     const pageVariants = {
         initial: {
             opacity: 0,
-            y:0
+            y: 0
         },
         in: {
             opacity: 1,
@@ -51,6 +52,7 @@ const Skills = () => {
         stiffness: 100,
     };
 
+
     return (
         <React.Fragment>
             <motion.div
@@ -65,45 +67,50 @@ const Skills = () => {
                     <div className="container-text">
                         <div className="inner-container">
                             <div className='projects-wrapper'>
-                                <SkillsSmall icon={react}
-                                             path={ROUTE_REACT}
-                                />
-                                <SkillsSmall icon={js}
-                                             path={ROUTE_JS}
+                                <AnimatePresence>
 
-                                />
-                                <SkillsSmall icon={sass}
-                                             path={ROUTE_SASS}
 
-                                />
-                                <SkillsSmall icon={html}
-                                             path={ROUTE_HTML}
+                                        <SkillsSmall icon={react}
+                                                     path={ROUTE_REACT}
+                                        />
 
-                                />
-                                <SkillsSmall icon={django}
-                                             path={ROUTE_DJANGO}
-                                />
-                                <SkillsSmall icon={drf}
-                                             path={ROUTE_DRF}
-                                />
-                                <SkillsSmall icon={python}
-                                             path={ROUTE_PYTHON}
-                                />
-                                <SkillsSmall icon={css}
-                                             path={ROUTE_CSS}
-                                />
-                                <SkillsSmall icon={git}
-                                             path={ROUTE_GIT}
-                                />
-                                <SkillsSmall icon={pycharm}
-                                             path={ROUTE_EDITOR}
-                                />
-                                <SkillsSmall icon={visual}
-                                             path={ROUTE_EDITOR}
-                                />
-                                <SkillsSmall icon={ubuntu}
-                                             path={ROUTE_EDITOR}
-                                />
+                                    <SkillsSmall icon={js}
+                                                 path={ROUTE_JS}
+
+                                    />
+                                    <SkillsSmall icon={sass}
+                                                 path={ROUTE_SASS}
+
+                                    />
+                                    <SkillsSmall icon={html}
+                                                 path={ROUTE_HTML}
+
+                                    />
+                                    <SkillsSmall icon={django}
+                                                 path={ROUTE_DJANGO}
+                                    />
+                                    <SkillsSmall icon={drf}
+                                                 path={ROUTE_DRF}
+                                    />
+                                    <SkillsSmall icon={python}
+                                                 path={ROUTE_PYTHON}
+                                    />
+                                    <SkillsSmall icon={css}
+                                                 path={ROUTE_CSS}
+                                    />
+                                    <SkillsSmall icon={git}
+                                                 path={ROUTE_GIT}
+                                    />
+                                    <SkillsSmall icon={pycharm}
+                                                 path={ROUTE_EDITOR}
+                                    />
+                                    <SkillsSmall icon={visual}
+                                                 path={ROUTE_EDITOR}
+                                    />
+                                    <SkillsSmall icon={ubuntu}
+                                                 path={ROUTE_EDITOR}
+                                    />
+                                </AnimatePresence>
 
 
                                 <div className="ex">

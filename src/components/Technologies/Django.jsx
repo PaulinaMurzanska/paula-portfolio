@@ -9,14 +9,43 @@ import {Link} from "react-router-dom";
 import {ImCross} from "react-icons/im";
 import ProjectItem from "components/Skills/ProjectItem";
 import beautyLineLogo from '../../images/beauty-line.svg';
-import beautyScreen  from '../../images/beautylinescreen.png';
+import beautyScreen from '../../images/beautylinescreen.png';
 import blogScreen from '../../images/blogscreen.png';
 import blogLogo from '../../images/bloglogo.png';
+import {motion} from "framer-motion";
+
 
 const Django = () => {
+    const pageVariants = {
+        initial: {
+            opacity: 0,
+
+            y: "100vw"
+        },
+        in: {
+            opacity: 1,
+
+            y: 0
+        },
+        out: {
+            opacity: 0,
+            y: "100vh"
+        },
+    };
+    const pageTransition = {
+        duration: 0.4,
+        stiffness: 100,
+    };
     return (
         <React.Fragment>
-            <div className="pages">
+            <motion.div
+                className="pages"
+                variants={pageVariants}
+                exit="out"
+                animate="in"
+                initial="initial"
+                transition={pageTransition}
+            >
                 <div className="pages-container">
                     <div className="container-text">
                         <div className="inner-container">
@@ -29,13 +58,13 @@ const Django = () => {
                                 list={djangoList}
                             />
                             <div className='projects-wrapper'>
-                               <ProjectItem
+                                <ProjectItem
                                     title='Beauty Line'
                                     projectLogo={beautyLineLogo}
                                     projectScreen={beautyScreen}
                                     path={ROUTE_BEAUTYLINE}
                                 />
-                                 <ProjectItem
+                                <ProjectItem
                                     title='Enjoy Your Stay'
                                     projectLogo={blogLogo}
                                     projectScreen={blogScreen}
@@ -50,7 +79,7 @@ const Django = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </React.Fragment>
     )
 }
