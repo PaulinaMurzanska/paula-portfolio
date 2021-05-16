@@ -3,7 +3,6 @@
 .pages {
   width: 100%;
   height: 100vh;
-
 }
 
 .pages-container {
@@ -14,29 +13,54 @@
   flex-direction: column;
   height: auto;
   align-items: flex-end;
+  @media(max-width: 800px) {
+    justify-content: center;
+  }
 
 }
 
 .container-text {
   width: 80%;
   color: $textColor;
+  @media(max-width: 1000px) {
+    width: 75%;
+  }
+  @media(max-width: 800px) {
+    width: 95%;
+    margin: 60px auto;
+  }
+
 
 }
 
 .inner-container {
   padding: 50px;
   margin: 20px 0 20px 20px;
-  background-color: rgba(255, 255, 255, 0.57);
-  opacity: .8;
+  background-color: rgba(255, 255, 255, 0.67);
+  opacity: .9;
   box-shadow: -6px 1px 7px 0px rgba(151, 132, 132, 0.75);
-  &.education{
+  &.education {
     padding: 0;
+    @media(max-width: 800px) {
+      margin: 0;
+
+    }
+  }
+   @media(max-width: 1200px) {
+   padding: 20px;
+
+  }
+  @media(max-width: 800px) {
+   padding: 10px;
+    margin: 0;
+      background-color: rgba(255, 255, 255, 0.8);
   }
 
 }
-.projects-wrapper{
-  margin-top:25px;
-  display:flex;
+
+.projects-wrapper {
+  margin-top: 25px;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }

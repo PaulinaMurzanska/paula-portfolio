@@ -2,7 +2,7 @@ import React from 'react';
 import 'scss/pageContainer.scss';
 import {ROUTE_BEAUTYLINE, ROUTE_BLOG, ROUTE_BUDGET, ROUTE_PLANTATION, ROUTE_PROJECTS} from "Constants/Routes";
 import "../Technologies/React.scss"
-import "../About/About.scss";
+// import "../About/About.scss";
 import ProjectSiteItem from "components/Projects/ProjectSiteItrem";
 import reactLogo from '../../images/reactjs-ar21.svg';
 import budgetUrl from '../../images/budgetscreen.png';
@@ -41,7 +41,7 @@ const Projects = () => {
     };
     const pageTransition = {
         duration: 0.4,
-        stiffness: 100,
+        stiffness: 0,
     };
 
     return (
@@ -61,9 +61,7 @@ const Projects = () => {
                                 <div className="description-text">
                                     <h2>My training projects</h2>
                                     <AnimatePresence>
-                                        <div className='projects-wrapper'
-
-                                        >
+                                        <div className='projects-wrapper'>
                                             <motion.div
                                                 variants={pageVariants}
                                                 exit="out"
@@ -90,7 +88,6 @@ const Projects = () => {
                                                 initial="initial"
                                                 transition={{duration: .5, delay: .3}}
                                             >
-
                                                 <ProjectSiteItem
                                                     techLogo={reactLogo}
                                                     url={plantationUrl}
@@ -225,7 +222,6 @@ const Projects = () => {
                                                     linkType="linkHref"
                                                 />
                                             </motion.div>
-
                                         </div>
                                     </AnimatePresence>
                                     <div className="onclick">

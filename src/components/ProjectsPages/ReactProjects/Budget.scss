@@ -3,6 +3,10 @@
 .description {
   display: flex;
   position: relative;
+  @media(max-width: 950px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   .description-text {
     padding: 20px;
@@ -42,9 +46,13 @@
     .demo-image-wrapper {
       box-shadow: -6px 1px 7px 0px rgba(151, 132, 132, 0.75);
       position: relative;
-       border-radius: 10px;
-      img{
       border-radius: 10px;
+
+      img {
+        border-radius: 10px;
+        @media(max-width: 1200px) {
+          width: 250px;
+        }
       }
 
 
@@ -75,6 +83,10 @@
     right: -20px;
     font-size: 1.5rem;
     color: $menuLinksColor;
+    @media(max-width: 1200px) {
+      top: 0;
+      right: 0;
+    }
 
     &:hover {
       color: $textColor;

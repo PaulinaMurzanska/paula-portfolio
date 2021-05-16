@@ -7,7 +7,12 @@
   position: relative;
   box-shadow: 0px -1px 15px 3px #9E9E9E;
   margin: 10px;
-  border-radius:10px;
+  border-radius: 10px;
+  @media(max-width: 550px) {
+    width: 300px;
+    height: 300px;
+  }
+
 
   &::before {
     content: '';
@@ -17,7 +22,11 @@
     position: absolute;
     top: 0;
     left: 0;
-   border-radius: 10px;
+    border-radius: 10px;
+    @media(max-width: 550px) {
+      width: 300px;
+    }
+
   }
 
   &::after {
@@ -31,11 +40,15 @@
     color: white;
     font-size: 2rem;
     display: none;
+
   }
 
   &:hover::before {
     height: 200px;
-    transition: .6s;
+    transition: .7s;
+    @media(max-width: 550px) {
+      height: 300px;
+    }
   }
 
   &:hover::after {
@@ -56,6 +69,11 @@
     align-items: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    @media(max-width: 550px) {
+      width: 300px;
+      height: 50px;
+
+    }
 
     &.hide {
       display: none;

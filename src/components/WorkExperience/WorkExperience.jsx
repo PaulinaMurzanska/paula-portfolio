@@ -2,7 +2,7 @@ import React from "react";
 import '../../scss/pageContainer.scss';
 import SchoolBlock from "components/Education/SchoolBlock";
 import zulian from '../../images/zul.jpg';
-import yarden from "../../images/yarden3.jpg";
+import yarden from "../../images/yard.jpg";
 import daniel from "../../images/daniel.jpg";
 import {bbList, yardenList, zulList} from "Constants/Descriptions";
 import {motion} from "framer-motion";
@@ -24,7 +24,7 @@ const Work = () => {
     };
     const pageTransition = {
         duration: .6,
-        stiffness: 100,
+        stiffness: 0,
     };
     return (
         <React.Fragment>

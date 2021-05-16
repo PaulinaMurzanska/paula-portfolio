@@ -1,56 +1,37 @@
 @import '../../scss/variables';
 
-body {
-  position: relative;
-}
+.details {
+  color: $textColor;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 100px auto;
 
-.contact-page {
-  width: 80%;
-  height: 500px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(25%);
-  right: 20px;
-  display: flex;
-  flex-direction: row;
-  box-shadow: -6px 1px 7px 0px rgba(151, 132, 132, 0.75);
-  background-color: rgba(255, 255, 255, 0.35);
-  justify-content: center;
-  align-items: center;
-  .details {
+  a {
+    text-decoration: none;
     color: $textColor;
-    letter-spacing: 1px;
-    text-align: center;
 
-    a {
-      text-decoration: none;
-      color: $textColor;
-
-      &:hover {
-        color: rgba(255, 255, 255, 0.68);
-        transition: .3s;
-      }
+    &:hover {
+      color: rgba(255, 255, 255, 0.68);
+      transition: .3s;
     }
+  }
 
-    h2 {
-      font-size: 2.5rem;
-      text-transform: uppercase;
-    }
+  h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
 
-    h3 {
-      font-size: 1rem;
-      text-transform: uppercase;
+  h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
 
+  }
 
-    }
-
-    h4 {
-      font-size: 1.5rem;
-      font-weight: 400;
-
-    }
-
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
 
   }
 
 }
+

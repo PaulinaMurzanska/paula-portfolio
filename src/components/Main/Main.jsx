@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route,useLocation} from "react-router-dom";
 import {
-    ROUTE_ABOUT, ROUTE_BEAUTYLINE, ROUTE_BLOG, ROUTE_BUDGET,
+    ROUTE_ABOUT, ROUTE_ABOUT_SKILLS, ROUTE_BEAUTYLINE, ROUTE_BLOG, ROUTE_BUDGET,
     ROUTE_CONTACT, ROUTE_CSS, ROUTE_DJANGO, ROUTE_DRF, ROUTE_EDITOR,
     ROUTE_EDUCATION, ROUTE_GIT, ROUTE_HTML, ROUTE_JS,
     ROUTE_MAIN, ROUTE_PLANTATION,
@@ -43,6 +43,10 @@ const Main =()=> {
                         <WelcomePage/>
                     </Route>
                     <Route exact path={ROUTE_ABOUT}>
+                        <NavLeft/>
+                        <WelcomePage/>
+                    </Route>
+                    <Route exact path={ROUTE_ABOUT_SKILLS}>
                         <NavLeft/>
                         <About/>
                     </Route>

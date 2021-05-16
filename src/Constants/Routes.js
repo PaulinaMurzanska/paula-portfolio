@@ -19,6 +19,7 @@ const ROUTE_CSS="/details/css";
 const ROUTE_PYTHON="/details/python";
 const ROUTE_GIT="/details/git";
 const ROUTE_EDITOR="/details/editor";
+const ROUTE_ABOUT_SKILLS='/skills';
 
 
 
@@ -45,4 +46,5 @@ export {
     ROUTE_PYTHON,
     ROUTE_GIT,
     ROUTE_EDITOR,
+    ROUTE_ABOUT_SKILLS,
 }

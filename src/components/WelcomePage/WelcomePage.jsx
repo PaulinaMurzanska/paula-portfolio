@@ -1,38 +1,65 @@
 import React, {useState} from 'react';
 import './WelcomePage.scss';
 import "../../scss/pageContainer.scss";
-import paula from '../../images/paulaFrontPhoto.jpg';
-import {ImCross} from "react-icons/im";
-import {Link} from "react-router-dom";
-import jsLogo from "images/js.png";
-import SkillDetail from "components/Skills/SkillDetail";
-import {aboutJavaScript, jsList} from "Constants/Descriptions";
-import {ROUTE_SKILLS} from "Constants/Routes";
 import {motion} from "framer-motion";
+import {BsChevronDoubleDown} from "react-icons/bs"
 
 const WelcomePage = () => {
+    const [showText, setShowText] = useState(false);
+    // const [hideText, setHideText] = useState(true);
 
+    const pageVariants = {
+        initial: {
+            opacity: 0,
+            y: 0
+        },
+        in: {
+            opacity: 1,
+            y: 0
+        },
+        out: {
+            opacity: 0,
+            y: 0
+        },
+    };
+    const pageTransition = {
+        duration: .6,
+        stiffness: 0,
+    };
 
     return (
         <React.Fragment>
-
-
-            <div className="welcome">
-                {/*<img src={paula}/>*/}
-
-                <div className="intro-welcome">
+            <motion.div
+                className="welcome"
+                exit="out"
+                animate="in"
+                initial="initial"
+                variants={pageVariants}
+                transition={pageTransition}
+            >
+                <div className="intro-welcome slide-from-lef">
                     <div className="header-welcome">
                         <h1>&lt;h1&gt; Hello Visitor! &lt;/h1&gt;</h1>
 
                     </div>
-                    <div className='sub-header'>
+                    <div className={`chevron-on ${showText ? "open-text" : ""}`}
+                         onClick={() => setShowText(true)}
+                    >
+                        <BsChevronDoubleDown/>
+                    </div>
+                    <div className={`chevron-off ${showText ? "show-text" : ""}`}
+                         onClick={() => setShowText(false)}
+                    >
+                        <BsChevronDoubleDown/>
+                    </div>
+                    <div className={`sub-header ${showText ? "show" : ""}`}>
                         <h3>
                             I'm junior Front End developer,
                             dreaming to explore and master the World of Codes...
                         </h3>
                     </div>
 
-                    <div className='text-about'>
+                    <div className={`text-about ${showText ? "show" : ""}`}>
                         <p> For many years my
                             professional life has been connected to hospitality business,
                             HR and properties management. </p>
@@ -49,29 +76,7 @@ const WelcomePage = () => {
 
                     </div>
                 </div>
-
-                {/*    <h3>*/}
-                {/*        I'm junior Front End developer,*/}
-                {/*        dreaming to explore and master the World of Codes...*/}
-                {/*    </h3>*/}
-                {/*    <div className='text-about'>*/}
-                {/*        <p> For many years my*/}
-                {/*            professional life has been connected to hospitality business,*/}
-                {/*            HR and properties management. </p>*/}
-                {/*            <p>*/}
-                {/*                   Even though I have pretty successful career within*/}
-                {/*            hotels management I felt I can't develop myself any more and simply needed a change.*/}
-                {/*            </p>*/}
-                {/*        <p>    I searched for activities that would be intellectually challenging for me.*/}
-                {/*            And that's how I started my journey with coding. Surprisingly, I found myself very drawn to it.*/}
-                {/*            Working with code gives me a lot of satisfaction and I'm spending every possible minute to improve my*/}
-                {/*            knowledge and skills, to become a professional programmer.</p>*/}
-
-                {/*    </div>*/}
-
-
-                {/*</div>*/}
-            </div>
+            </motion.div>
 
 
         </React.Fragment>

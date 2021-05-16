@@ -23,7 +23,7 @@ const Education = () => {
     };
     const pageTransition = {
         duration: .6,
-        stiffness: 100,
+        stiffness: 0,
     };
     return (
         <React.Fragment>
@@ -40,7 +40,7 @@ const Education = () => {
                         <div className="inner-container education">
                             <div className="education-site-wrapper">
                                 <SchoolBlock
-                                    imageUlr={codeb}
+                                    imageUlr=""
                                     schoolName="CodeBrainers"
                                     reversed={true}
                                     schoolNameText="CodeBrainers bootcamp"

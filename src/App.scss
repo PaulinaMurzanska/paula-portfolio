@@ -1,5 +1,12 @@
 @import './scss/variables';
 
+html {
+  font-size: 16px;
+  @media(max-width: 1200px) {
+    font-size: 14px;
+  }
+}
+
 body {
   font-size: 12px;
   font-family: $fontFamily;
@@ -9,7 +16,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  //font-family: Montserrat;
+  @media(max-width: 800px) {
+    //background-position: bottom;
+      background-size: cover;
+      background-position: revert;
+
+  }
 
 
   &::after {
@@ -20,6 +32,9 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
+     @media(max-width: 800px) {
+    display: none;
+  }
 
   }
 

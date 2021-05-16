@@ -3,9 +3,15 @@
 .inner-container {
   position: relative;
 
+
   .details-logo {
     img {
       height: 100px;
+    }
+    .editors-logos{
+     @media(max-width: 800px) {
+       height: 60px;
+     }
     }
   }
   .ex {

@@ -47,9 +47,9 @@ const CodeEditor = () => {
                     <div className="container-text">
                         <div className="inner-container">
                             <div className='details-logo'>
-                                <img src={visual}/>
-                                <img src={pycharmLogo}/>
-                                <img src={ubuntu}/>
+                                <img className="editors-logos" src={visual} />
+                                <img className="editors-logos" src={pycharmLogo}/>
+                                <img className="editors-logos" src={ubuntu}/>
                             </div>
                             <SkillDetail
                                 intro={aboutEditors}

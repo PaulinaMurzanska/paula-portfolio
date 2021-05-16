@@ -38,7 +38,7 @@ const BeautyLine = ({path}) => {
                                         the welcome site and navigation are just simple frames just I had a place to put the reservation system to.
                                     </p>
                                     <span> To see how the system works, please go to the website, make several reservations for different services and
-                                        different employees. When you do that, please log in to the employee account using credential given in the demo image aside.
+                                        different employees. When you do that, please log in to the employee account using credentials given in the demo image aside.
                                         There are 3 different users accounts, use any of the following names as a username: Meg, Kate, Eva. Password for all remains the same.
                                      </span>
                                     <span>The  Source code of the application is available on my <GoMarkGithub/></span>

@@ -43,7 +43,7 @@ const About = () => {
 
                         <div className='about-inner-container-text '>
                             <span>&lt;h1&gt; Hello Visitor! &lt;/h1&gt;</span>
-                            <h1>I'm junior skilled Front End developer,
+                            <h1>I'm junior Front End developer,
                                 dreaming to explore and master the World of Codes...</h1>
                             <hr/>
                             <p>

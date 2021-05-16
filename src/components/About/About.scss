@@ -6,7 +6,6 @@
   height: 100vh;
   overflow-x: hidden;
 
-
   .container-about {
     width: 95%;
     margin: 0 auto;
@@ -15,20 +14,33 @@
     flex-direction: column;
     height: auto;
     align-items: flex-end;
+    @media(max-width: 800px) {
+      justify-content: center;
+    }
 
     .about-text {
       width: 80%;
       color: $textColor;
+      @media(max-width: 1000px) {
+        width: 75%;
+      }
+      @media(max-width: 800px) {
+        width: 95%;
+        margin: 60px auto;
+      }
+
 
       .about-inner-container-text {
+        min-height: 70vh;
         padding: 50px;
         margin: 20px 0 20px 20px;
         background-color: rgba(255, 255, 255, 0.57);
         opacity: .8;
         box-shadow: -6px 1px 7px 0px rgba(151, 132, 132, 0.75);
 
-        @media(max-width: 600px) {
-          padding: 15px;
+        @media(max-width: 800px) {
+          margin: 0;
+
         }
 
 

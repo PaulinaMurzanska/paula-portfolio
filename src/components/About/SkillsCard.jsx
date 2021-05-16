@@ -5,7 +5,7 @@ import './SkillsCard.scss';
 import "../../scss/pageContainer.scss";
 import react from "images/react.png";
 import {
-    ROUTE_ABOUT,
+    ROUTE_ABOUT, ROUTE_ABOUT_SKILLS,
     ROUTE_CSS,
     ROUTE_DJANGO,
     ROUTE_DRF, ROUTE_EDITOR, ROUTE_GIT,
@@ -49,7 +49,7 @@ const Skills = () => {
     };
     const pageTransition = {
         duration: .6,
-        stiffness: 100,
+        stiffness: 0,
     };
 
 
@@ -114,7 +114,7 @@ const Skills = () => {
 
 
                                 <div className="ex">
-                                    <Link to={ROUTE_ABOUT}>
+                                    <Link to={ROUTE_ABOUT_SKILLS}>
                                         <ImCross/>
                                     </Link>
                                 </div>
