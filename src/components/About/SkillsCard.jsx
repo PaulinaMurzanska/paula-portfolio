@@ -30,6 +30,7 @@ import {ImCross} from "react-icons/im";
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
 import {AnimatePresence} from "framer-motion/dist/framer-motion";
+import ScrollToTop from "react-scroll-to-top";
 
 
 const Skills = () => {
@@ -55,6 +56,12 @@ const Skills = () => {
 
     return (
         <React.Fragment>
+            <ScrollToTop smooth color="rgba(231, 130, 0, 0.91)"
+                         style={{
+                             right: "2px",
+                             bottom: "30px",
+                             backgroundColor: "rgba(41, 36, 66, 0.95)"
+                         }}/>
             <motion.div
                 className="pages"
                 exit="out"
@@ -70,9 +77,9 @@ const Skills = () => {
                                 <AnimatePresence>
 
 
-                                        <SkillsSmall icon={react}
-                                                     path={ROUTE_REACT}
-                                        />
+                                    <SkillsSmall icon={react}
+                                                 path={ROUTE_REACT}
+                                    />
 
                                     <SkillsSmall icon={js}
                                                  path={ROUTE_JS}

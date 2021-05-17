@@ -23,7 +23,7 @@ const aboutJavaScript = "Java Script is for me inseparable part of front end cod
     "are essential for developing front end applications. I'm feeling more comfortable using JS in the " +
     "context of problems I'm facing to solve, " +
     "mostly within React framework," +
-    " rather than using it without any specific context. I had not have much chance to use vanilla JS fot the projects I have made so far. " +
+    " rather than using it without any specific context. I have not had much chance to use vanilla JS for the projects I have made so far. " +
     "Although, in my first static websites projects, many times I've implemented jQuery libraries. Here are some of the most important features I actively" +
     " use and am familiar with:";
 const jsList = [

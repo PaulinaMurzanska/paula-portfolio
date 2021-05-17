@@ -19,6 +19,7 @@ import drf from '../../images/djangorest.png';
 import budgetApi from '../../images/budgetApiScreen.png';
 import plantsApi from '../../images/plantsApiScreen.png';
 import {motion, AnimatePresence} from "framer-motion/dist/framer-motion";
+import ScrollToTop from "react-scroll-to-top";
 
 
 const Projects = () => {
@@ -46,6 +47,13 @@ const Projects = () => {
 
     return (
         <React.Fragment>
+            <ScrollToTop smooth color="rgba(231, 130, 0, 0.91)"
+                         style={{
+                             right: "2px",
+                             bottom: "30px",
+                             backgroundColor: "rgba(41, 36, 66, 0.95)"
+                         }}/>
+
             <motion.div
                 className="pages"
                 variants={pageVariants}
@@ -54,9 +62,12 @@ const Projects = () => {
                 initial="initial"
                 transition={pageTransition}
             >
+
                 <div className="pages-container">
                     <div className="container-text">
                         <div className="inner-container">
+
+
                             <div className='description'>
                                 <div className="description-text">
                                     <h2>My training projects</h2>

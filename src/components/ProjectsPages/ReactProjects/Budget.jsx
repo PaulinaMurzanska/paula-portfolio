@@ -6,6 +6,8 @@ import {GoMarkGithub} from "react-icons/go";
 import {ImCross} from "react-icons/im";
 import {Link} from "react-router-dom";
 import {ROUTE_REACT} from "Constants/Routes";
+import ScrollToTop from "react-scroll-to-top";
+import {motion} from "framer-motion";
 
 
 const Budget = ({path}) => {
@@ -13,6 +15,12 @@ const Budget = ({path}) => {
 
     return (
         <React.Fragment>
+            <ScrollToTop smooth color="rgba(231, 130, 0, 0.91)"
+                         style={{
+                             right: "2px",
+                             bottom: "30px",
+                             backgroundColor: "rgba(41, 36, 66, 0.95)"
+                         }}/>
             <div className="pages">
                 <div className="pages-container">
                     <div className="container-text">

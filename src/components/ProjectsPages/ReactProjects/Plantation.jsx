@@ -6,6 +6,8 @@ import {GoMarkGithub} from "react-icons/go";
 import {ImCross} from "react-icons/im";
 import {Link} from "react-router-dom";
 import {ROUTE_REACT} from "Constants/Routes";
+import ScrollToTop from "react-scroll-to-top";
+import {motion} from "framer-motion";
 
 
 const Plantation = ({path}) => {
@@ -13,6 +15,12 @@ const Plantation = ({path}) => {
 
     return (
         <React.Fragment>
+            <ScrollToTop smooth color="rgba(231, 130, 0, 0.91)"
+                         style={{
+                             right: "2px",
+                             bottom: "30px",
+                             backgroundColor: "rgba(41, 36, 66, 0.95)"
+                         }}/>
             <div className="pages">
                 <div className="pages-container">
                     <div className="container-text">
@@ -20,9 +28,12 @@ const Plantation = ({path}) => {
                             <div className='description'>
                                 <div className="description-text">
                                     <h2>Plantation</h2>
-                                    <p>This was my first React App, that I had created as my final project of the Codebrainers Bootcamp.
-                                        It contains functionalities like data fetching from external DRF API, sorting, filtering and mapping.
-                                        The purpose of building this sort of app, was to practice features that React has to offer.
+                                    <p>This was my first React App, that I had created as my final project of the
+                                        Codebrainers Bootcamp.
+                                        It contains functionalities like data fetching from external DRF API, sorting,
+                                        filtering and mapping.
+                                        The purpose of building this sort of app, was to practice features that React
+                                        has to offer.
                                     </p>
                                     <p>
                                         Data source comes from written by myself during the course Django Restful API.
@@ -30,8 +41,10 @@ const Plantation = ({path}) => {
                                         to add new items, update and remove them.
                                     </p>
                                     <p>
-                                        The App is designed to manage user's plant that he has at home based on default types of plants.
-                                        User can customize names, requirements and pictures. For this app user registration function
+                                        The App is designed to manage user's plant that he has at home based on default
+                                        types of plants.
+                                        User can customize names, requirements and pictures. For this app user
+                                        registration function
                                         has not been implemented.
                                     </p>
                                     <span>To check the client side version of the app, please use given in demo image

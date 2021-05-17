@@ -6,6 +6,7 @@ import yarden from "../../images/yard.jpg";
 import daniel from "../../images/daniel.jpg";
 import {bbList, yardenList, zulList} from "Constants/Descriptions";
 import {motion} from "framer-motion";
+import ScrollToTop from "react-scroll-to-top";
 
 const Work = () => {
     const pageVariants = {
@@ -28,6 +29,12 @@ const Work = () => {
     };
     return (
         <React.Fragment>
+            <ScrollToTop smooth color="rgba(231, 130, 0, 0.91)"
+                         style={{
+                             right: "2px",
+                             bottom: "30px",
+                             backgroundColor: "rgba(41, 36, 66, 0.95)"
+                         }}/>
             <motion.div
                 className="pages"
                 exit="out" animate="in"

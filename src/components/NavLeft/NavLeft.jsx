@@ -14,8 +14,8 @@ import {Link} from "react-router-dom";
 import {GoMarkGithub} from "react-icons/go";
 
 const NavLeft = () => {
-     const [openMenu, setOpenMenu]=useState(false);
-     const[isHover, setIsHover]=useState(false);
+    const [openMenu, setOpenMenu] = useState(false);
+    const [isHover, setIsHover] = useState(false);
     return (
         <React.Fragment>
             <div className={`menu-side ${openMenu ? "roll-down" : ""}`}>
@@ -30,6 +30,7 @@ const NavLeft = () => {
                     <AppNavItem
                         name='about me'
                         path={ROUTE_ABOUT}
+
                     />
                     <AppNavItem
                         name='about my skills'
@@ -62,15 +63,27 @@ const NavLeft = () => {
                     <a href='https://github.com/PaulinaMurzanska' target="_blank">
                         <GoMarkGithub/>
                     </a>
-
                 </div>
+                <div className='menu-hover-triangle-up'>
+                    <div
+                        className={`bar-menu-top ${isHover ? "on-hover" : ""}`}
+                        onMouseOver={() => setIsHover(true)}
+                        onMouseLeave={() => setIsHover(false)}
+                        onClick={() => setOpenMenu(false)}
+                    >
+                        <div/>
+                        <div/>
+                        <div/>
+                    </div>
+                </div>
+
             </div>
             <div className='menu-hover-triangle'>
                 <div
-                    className={`bar-menu ${isHover ? "on-hover": ""}`}
-                    onMouseOver={()=>setIsHover(true)}
-                    onMouseLeave={()=>setIsHover(false)}
-                    onClick={()=>setOpenMenu(true)}
+                    className={`bar-menu ${isHover ? "on-hover" : ""}`}
+                    onMouseOver={() => setIsHover(true)}
+                    onMouseLeave={() => setIsHover(false)}
+                    onClick={() => setOpenMenu(true)}
                 >
                     <div/>
                     <div/>

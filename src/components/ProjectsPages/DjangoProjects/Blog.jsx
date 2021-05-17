@@ -1,11 +1,11 @@
 import React from 'react';
 import 'scss/pageContainer.scss';
-// import './Budget.scss';
 import demoImage from "../../../images/loginblog.png";
 import {GoMarkGithub} from "react-icons/go";
 import {ImCross} from "react-icons/im";
 import {Link} from "react-router-dom";
 import {ROUTE_DJANGO} from "Constants/Routes";
+import ScrollToTop from "react-scroll-to-top";
 
 
 const Blog = ({path}) => {
@@ -13,6 +13,12 @@ const Blog = ({path}) => {
 
     return (
         <React.Fragment>
+            <ScrollToTop smooth color="rgba(231, 130, 0, 0.91)"
+                         style={{
+                             right: "2px",
+                             bottom: "30px",
+                             backgroundColor: "rgba(41, 36, 66, 0.95)"
+                         }}/>
             <div className="pages">
                 <div className="pages-container">
                     <div className="container-text">

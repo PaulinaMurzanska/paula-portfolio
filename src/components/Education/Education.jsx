@@ -5,6 +5,7 @@ import uek from '../../images/ueknew.jpg';
 import codeb from "../../images/yellow bus.png";
 import lo from "../../images/lo.jpeg";
 import {motion} from "framer-motion";
+import ScrollToTop from "react-scroll-to-top";
 
 const Education = () => {
     const pageVariants = {
@@ -27,9 +28,16 @@ const Education = () => {
     };
     return (
         <React.Fragment>
+            <ScrollToTop smooth color="rgba(231, 130, 0, 0.91)"
+                         style={{
+                             right: "2px",
+                             bottom: "30px",
+                             backgroundColor: "rgba(41, 36, 66, 0.95)"
+                         }}/>
+
             <motion.div
                 className="pages"
-                  exit="out" animate="in"
+                exit="out" animate="in"
                 initial="initial"
                 variants={pageVariants}
                 transition={pageTransition}

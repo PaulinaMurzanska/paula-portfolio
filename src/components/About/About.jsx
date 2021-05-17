@@ -5,6 +5,7 @@ import {Container} from "reactstrap";
 import {ROUTE_SKILLS} from "Constants/Routes";
 import {motion} from "framer-motion";
 import {Link} from "react-router-dom";
+import ScrollToTop from "react-scroll-to-top";
 
 const About = () => {
     const text = "onClick={clickHereToOpen}";
@@ -38,8 +39,13 @@ const About = () => {
                 transition={pageTransition}
                 variants={pageVariants}
             >
+
+
                 <Container className='container-about'>
+
+
                     <div className="about-text">
+
 
                         <div className='about-inner-container-text '>
                             <span>&lt;h1&gt; Hello Visitor! &lt;/h1&gt;</span>
@@ -80,7 +86,7 @@ const About = () => {
 
                             <p> So what actually are my skills?</p>
                             <Link to={ROUTE_SKILLS}>
-                                 <span className='clickable'>{text}</span>
+                                <span className='clickable'>{text}</span>
                             </Link>
                         </div>
                     </div>

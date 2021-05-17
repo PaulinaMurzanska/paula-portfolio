@@ -8,6 +8,7 @@ import jsLogo from "../../images/js.png";
 import {Link} from "react-router-dom";
 import {ImCross} from "react-icons/im";
 import {motion} from "framer-motion";
+import ScrollToTop from "react-scroll-to-top";
 
 
 const JavaScript = () => {
@@ -33,6 +34,12 @@ const JavaScript = () => {
     };
     return (
         <React.Fragment>
+                <ScrollToTop smooth color="rgba(231, 130, 0, 0.91)"
+                         style={{
+                             right: "2px",
+                             bottom: "30px",
+                             backgroundColor: "rgba(41, 36, 66, 0.95)"
+                         }}/>
             <motion.div
                 className="pages"
                 variants={pageVariants}

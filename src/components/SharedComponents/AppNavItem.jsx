@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {NavItem, NavLink} from "reactstrap";
 import {NavLink as RouterNavLink} from "react-router-dom";
-import '../Header/Header.scss';
+// import '../Header/Header.scss';
 
 
 const AppNavItem = ({path, name}) => {
@@ -10,12 +10,13 @@ const AppNavItem = ({path, name}) => {
         fontSize:"1.3rem",
         paddingLeft:"5px",
 
-
-
     };
+
     return (
         <NavItem>
-            <NavLink tag={RouterNavLink} exact to={path} activeClassName='active' activeStyle={style}>
+            <NavLink tag={RouterNavLink} exact to={path} activeClassName='active'
+                     activeStyle={style}
+            >
                 {name}
             </NavLink>
         </NavItem>

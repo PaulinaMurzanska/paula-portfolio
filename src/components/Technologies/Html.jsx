@@ -13,6 +13,7 @@ import winter from "../../images/winterscreen.png";
 import pofo2 from '../../images/pofo2screen.png';
 import pofo1 from '../../images/pofo1screen.png';
 import {motion} from "framer-motion";
+import ScrollToTop from "react-scroll-to-top";
 
 
 const Html = () => {
@@ -38,6 +39,12 @@ const Html = () => {
     };
     return (
         <React.Fragment>
+            <ScrollToTop smooth color="rgba(231, 130, 0, 0.91)"
+                         style={{
+                             right: "2px",
+                             bottom: "30px",
+                             backgroundColor: "rgba(41, 36, 66, 0.95)"
+                         }}/>
             <motion.div
                 className="pages"
                 variants={pageVariants}

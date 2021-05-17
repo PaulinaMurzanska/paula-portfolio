@@ -3,6 +3,7 @@ import './WelcomePage.scss';
 import "../../scss/pageContainer.scss";
 import {motion} from "framer-motion";
 import {BsChevronDoubleDown} from "react-icons/bs"
+import ScrollToTop from "react-scroll-to-top";
 
 const WelcomePage = () => {
     const [showText, setShowText] = useState(false);
@@ -29,6 +30,12 @@ const WelcomePage = () => {
 
     return (
         <React.Fragment>
+            <ScrollToTop smooth color="rgba(231, 130, 0, 0.91)"
+                         style={{
+                             right: "2px",
+                             bottom: "30px",
+                             backgroundColor: "rgba(41, 36, 66, 0.95)"
+                         }}/>
             <motion.div
                 className="welcome"
                 exit="out"
