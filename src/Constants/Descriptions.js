@@ -19,7 +19,7 @@ const reactList = [
 const aboutReactSecond = " I encourage to take a look into my projects, to see how they look like from client side perspective ," +
     "and also see the code.";
 
-const aboutJavaScript = "Java Script is for me inseparable part of front end coding. I'm familiar with the most important features that " +
+const aboutJavaScript = "1 Java Script is for me inseparable part of front end coding. I'm familiar with the most important features that " +
     "are essential for developing front end applications. I'm feeling more comfortable using JS in the " +
     "context of problems I'm facing to solve, " +
     "mostly within React framework," +
