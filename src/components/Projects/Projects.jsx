@@ -11,7 +11,7 @@ import htmlLogo from '../../images/html.png';
 import alex from "../../images/alexsmith.png";
 import winter from '../../images/winterscreen.png';
 import pofo2 from '../../images/pofo2screen.png';
-import pofo1 from "../../images/pofo1screen.png";
+import pofo1 from "../../images/pofoFirst.png";
 import beautyLine from '../../images/beautylinescreen.png';
 import blog from "../../images/blogscreen.png";
 import django from '../../images/django.png';

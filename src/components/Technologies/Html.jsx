@@ -11,7 +11,7 @@ import HtmlSingleProject from "components/Technologies/HtmlSingleProject";
 import alex from '../../images/alexsmith.png';
 import winter from "../../images/winterscreen.png";
 import pofo2 from '../../images/pofo2screen.png';
-import pofo1 from '../../images/pofo1screen.png';
+import pofo1 from '../../images/pofoFirst.png';
 import {motion} from "framer-motion";
 import ScrollToTop from "react-scroll-to-top";
 
