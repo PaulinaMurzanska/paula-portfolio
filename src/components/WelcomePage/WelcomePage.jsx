@@ -61,25 +61,22 @@ const WelcomePage = () => {
                     </div>
                     <div className={`sub-header ${showText ? "show" : ""}`}>
                         <h3>
-                            I'm junior Front End developer,
-                            dreaming to explore and master the World of Codes...
+                            I'm a Junior Frontend Developer wanting to explore and master the World of Codes...
                         </h3>
                     </div>
 
                     <div className={`text-about ${showText ? "show" : ""}`}>
-                        <p> For many years my
-                            professional life has been connected to hospitality business,
-                            HR and properties management. </p>
+                        <p> For many years, my professional life has been connected to hospitality, HR and property
+                            management. </p>
                         <p>
-                            Even though I have pretty successful career within
-                            hotels management I felt I can't develop myself any more and simply needed a change.
+                            My career has been quite successful, but at some point I realized I couldn’t take it any
+                            further and needed a change.
                         </p>
-                        <p> I searched for activities that would be intellectually challenging for me.
-                            And that's how my journey with coding started. Surprisingly, I found myself very drawn to
-                            it.
-                            Working with code gives me a lot of satisfaction and I'm spending every possible minute to
-                            improve my
-                            knowledge and skills, to become a professional programmer.</p>
+                        <p> I explored various activities that could challenge me intellectually. That’s how my journey
+                            with coding began. Surprisingly, I became fascinated with it. Working with codes gives me a
+                            lot of satisfaction and these days I spend most of my free time improving my knowledge and
+                            skills on my way to becoming a professional programmer. I’m very excited to start a new
+                            career in IT. </p>
 
                     </div>
                 </div>

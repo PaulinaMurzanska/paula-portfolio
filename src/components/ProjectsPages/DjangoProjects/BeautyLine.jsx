@@ -8,10 +8,10 @@ import {Link} from "react-router-dom";
 import {ROUTE_DJANGO, ROUTE_REACT} from "Constants/Routes";
 import ScrollToTop from "react-scroll-to-top";
 import {motion} from "framer-motion";
+import ButtonParallel from "components/SharedComponents/ButtonParallel";
 
 
 const BeautyLine = ({path}) => {
-    const text = "onClick={clickHereToOpenGithub}";
 
     return (
         <React.Fragment>
@@ -28,39 +28,41 @@ const BeautyLine = ({path}) => {
                             <div className='description'>
                                 <div className="description-text">
                                     <h2>Beauty line - reservation system</h2>
-                                    <p>This application works as a reservation system that can be used in any website.
-                                        In this particular
-                                        case, it is dedicated for a beauty studio, but this is only matter of styling.
-                                        The code beneath gives possibility to use it
-                                        across many businesses that could benefit from that kind of booking system.
+                                    <p>This application is a reservation system that can be applied to any website. In
+                                        this particular case, it works as a beauty studio, but this is only a matter of
+                                        styling. The code beneath gives a possibility to use it across many other
+                                        businesses.
                                     </p>
                                     <p>
-                                        The App is a working solution for making reservation for specific date, specific
-                                        service and for specific employee. After making
-                                        reservation, user receive an unique code as a confirmation that booking process
-                                        went successfully. Reservation is automatically
-                                        placed in selected for chosen service, employee calendar. As the app has also an
-                                        employee site.
+                                        The app is a working solution for making a reservation for a specific date,
+                                        specific service and a specific employee. After placing a booking, the user
+                                        receives a unique code confirming that it’s been completed successfully.
+                                        Reservation is automatically placed in the calendar of the employee picked for a
+                                        selected service as the app includes an employee webpage as well.
                                     </p>
                                     <p>
-                                        Employee, is added to the system by admin. After signing in to his account,
-                                        employee can see all upcoming appointments
-                                        that have been made for his name. Admin can see all reservations.
+                                        Employees are added to the system by the admin. After logging in, an employee
+                                        can see all the upcoming appointments that have been booked under his name. The
+                                        admin has access to all reservations.
                                     </p>
                                     <p>
-                                        The Django code solutions are a teamwork effect. All the visual effects are 100%
-                                        my development. The app was about the calendar,
-                                        the welcome site and navigation are just simple frames just I had a place to put
-                                        the reservation system to.
+                                        The Django code solutions is a result of teamwork. All visuals are entirely my
+                                        work. The main aim of creating this app was the calendar, while the welcome page
+                                        and navigation work simply as frames in which I placed the reservation system.
                                     </p>
-                                    <span> To see how the system works, please go to the website, make several reservations for different services and
-                                        different employees. When you do that, please log in to the employee account using credentials given in the demo image aside.
-                                        There are 3 different users accounts, use any of the following names as a username: Meg, Kate, Eva. Password for all remains the same.
+                                    <span> To see how the system works, please go to the website and make several
+                                        reservations for different services and different employees. When you do that,
+                                        please log in to the employee account using credentials given in the demo image
+                                        on the side. You will find three different user accounts. You can use any of
+                                        the following names as a username: Meg, Kate, Eva. The password for all is
+                                        the same.
                                      </span>
-                                    <span>The  Source code of the application is available on my <GoMarkGithub/></span>
+                                    <span>The  Source code of the application is available on my GitHub.sssss</span>
                                     <div className="onclick">
                                         <a href="https://github.com/PaulinaMurzanska/Salon_kosmetyczny_heroku_version.git"
-                                           target="_blank">{text}</a>
+                                           target="_blank">
+                                            <ButtonParallel buttonText="GitHub"/>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className='demo-image'>

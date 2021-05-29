@@ -8,10 +8,10 @@ import {Link} from "react-router-dom";
 import {ROUTE_REACT} from "Constants/Routes";
 import ScrollToTop from "react-scroll-to-top";
 import {motion} from "framer-motion";
+import ButtonParallel from "components/SharedComponents/ButtonParallel";
 
 
-const Budget = ({path}) => {
-    const text = "onClick={clickHereToOpenGithub}";
+const Budget = () => {
 
     return (
         <React.Fragment>
@@ -28,36 +28,36 @@ const Budget = ({path}) => {
                             <div className='description'>
                                 <div className="description-text">
                                     <h2>Home Budget</h2>
-                                    <p>The application is designed to manage home budget.
-                                        User can create, edit and delete expenses, incomes and categories.
-                                        It includes functions as sorting or filtering available data. Data records
-                                        are displayed on sortable tables and charts.
+                                    <p>This application is designed to manage a home budget. Users can create, edit and
+                                        delete expenses, incomes and categories. It includes functions such as sorting
+                                        or filtering available data. Data records are displayed on sortable tables and
+                                        charts.
                                     </p>
                                     <p>
-                                        App works based on external Django Restful API, written by myself.
-                                        React app altogether with DFF gives possibility to create new users.
+                                        The app is based on the external Django Restful API that I wrote. React app in
+                                        combination with DRsssF allows creating new users.
                                     </p>
                                     <p>
-                                        While creating this project, I was trying to predict what errors can occur,
-                                        and implement solutions for other scenarios than "happy path". Data fetching is
-                                        delayed
-                                        in purpose, to show the loaders behavior.
-                                        The app is responsive for desktop and mobile devices.
+                                        While working on this project, I was trying to predict the errors that could
+                                        occur and implement solutions for scenarios other than "happy path". Data
+                                        fetching is delayed in purpose to show the loaders behavior. The app is
+                                        responsive to desktop and mobile devices.
                                     </p>
                                     <p>
-                                        The App has been designed and created from scratch by myself, without third
-                                        party participation. Although,
-                                        some solutions I used were based on the material
-                                        I have gained during the bootcamp I was participating.
+                                        I have designed this app from scratch. Some of the solutions that I used were
+                                        based on knowledge gained during the recently completed bootcamp.
                                     </p>
-                                    <span>To check the client side version of the app, you can use given in demo image
-                                        login details for existing user or create new user,
-                                        followed by instructions after visiting the site.
+                                    <span>To check the user’s side version of the app, you can use login details
+                                        provided in the demo image for an existing user or you can create a new user
+                                        following the instruction displayed after visiting the site.
                                      </span>
-                                    <span>The  Source code of the application is available on my <GoMarkGithub/></span>
+                                    <span> The source code of
+                                        the application is available on my GitHub.</span>
                                     <div className="onclick">
                                         <a href="https://github.com/PaulinaMurzanska/budget.git"
-                                           target="_blank">{text}</a>
+                                           target="_blank">
+                                            <ButtonParallel buttonText="GitHub"/>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className='demo-image'>

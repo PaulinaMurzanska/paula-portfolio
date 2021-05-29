@@ -20,6 +20,7 @@ import budgetApi from '../../images/budgetApiScreen.png';
 import plantsApi from '../../images/plantsApiScreen.png';
 import {motion, AnimatePresence} from "framer-motion/dist/framer-motion";
 import ScrollToTop from "react-scroll-to-top";
+import ButtonParallel from "components/SharedComponents/ButtonParallel";
 
 
 const Projects = () => {
@@ -78,7 +79,7 @@ const Projects = () => {
                                                 exit="out"
                                                 animate="in"
                                                 initial="initial"
-                                                transition={{duration: .5, delay: .2}}
+                                                transition={{duration: .5, delay: .05}}
                                             >
 
                                                 <ProjectSiteItem
@@ -97,7 +98,7 @@ const Projects = () => {
                                                 exit="out"
                                                 animate="in"
                                                 initial="initial"
-                                                transition={{duration: .5, delay: .3}}
+                                                transition={{duration: .5, delay: .06}}
                                             >
                                                 <ProjectSiteItem
                                                     techLogo={reactLogo}
@@ -112,7 +113,7 @@ const Projects = () => {
                                                 exit="out"
                                                 animate="in"
                                                 initial="initial"
-                                                transition={{duration: .5, delay: .4}}
+                                                transition={{duration: .5, delay: .07}}
                                             >
 
                                                 <ProjectSiteItem
@@ -128,7 +129,7 @@ const Projects = () => {
                                                 exit="out"
                                                 animate="in"
                                                 initial="initial"
-                                                transition={{duration: .5, delay: .5}}
+                                                transition={{duration: .5, delay: .08}}
                                             >
 
 
@@ -145,7 +146,7 @@ const Projects = () => {
                                                 exit="out"
                                                 animate="in"
                                                 initial="initial"
-                                                transition={{duration: .5, delay: .6}}
+                                                transition={{duration: .5, delay: .09}}
                                             >
 
                                                 <ProjectSiteItem
@@ -161,7 +162,7 @@ const Projects = () => {
                                                 exit="out"
                                                 animate="in"
                                                 initial="initial"
-                                                transition={{duration: .5, delay: .7}}
+                                                transition={{duration: .5, delay: .1}}
                                             >
                                                 <ProjectSiteItem
                                                     techLogo={htmlLogo}
@@ -176,7 +177,7 @@ const Projects = () => {
                                                 exit="out"
                                                 animate="in"
                                                 initial="initial"
-                                                transition={{duration: .5, delay: .8}}
+                                                transition={{duration: .5, delay: .11}}
                                             >
 
                                                 <ProjectSiteItem
@@ -192,7 +193,7 @@ const Projects = () => {
                                                 exit="out"
                                                 animate="in"
                                                 initial="initial"
-                                                transition={{duration: .5, delay: .9}}
+                                                transition={{duration: .5, delay: .12}}
                                             >
                                                 <ProjectSiteItem
                                                     techLogo={django}
@@ -207,7 +208,7 @@ const Projects = () => {
                                                 exit="out"
                                                 animate="in"
                                                 initial="initial"
-                                                transition={{duration: .5, delay: 1}}
+                                                transition={{duration: .5, delay: .13}}
                                             >
                                                 <ProjectSiteItem
                                                     techLogo={drf}
@@ -223,7 +224,7 @@ const Projects = () => {
                                                 exit="out"
                                                 animate="in"
                                                 initial="initial"
-                                                transition={{duration: .5, delay: 1.1}}
+                                                transition={{duration: .5, delay: .14}}
                                             >
                                                 <ProjectSiteItem
                                                     techLogo={drf}
@@ -237,7 +238,9 @@ const Projects = () => {
                                     </AnimatePresence>
                                     <div className="onclick">
                                         <a href="https://github.com/PaulinaMurzanska"
-                                           target="_blank">{text}</a>
+                                           target="_blank">
+                                            <ButtonParallel buttonText="Github"/>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

@@ -3,6 +3,8 @@ import './Contact.scss';
 import '../../scss/pageContainer.scss';
 import {motion} from "framer-motion";
 import {GoMarkGithub} from "react-icons/go";
+import {FaPhone} from "react-icons/fa";
+import {AiTwotoneMail} from "react-icons/ai";
 
 const Contact = () => {
 
@@ -40,14 +42,17 @@ const Contact = () => {
                         <div className="inner-container">
                             <div className="details">
                                 <h2>Paulina Murzańska</h2>
-                                <h3> - junior front end developer - </h3>
-                                <h4>cell:<a href="tel:0048-514-132-314" target="_blank">+48 514 132 314</a></h4>
-                                <h4>email: <a href="mailto:p.murzanska@gmail.com"
-                                              target="_blank">p.murzanska@gmail.com</a>
+                                <h3> - junior frontend developer - </h3>
+
+                                <h4><FaPhone style={{marginRight: "10px"}}/><a href="tel:0048-514-132-314"
+                                                                               target="_blank">+48 514-132-314</a></h4>
+                                <h4><AiTwotoneMail style={{marginRight: "10px"}}/> <a
+                                    href="mailto:p.murzanska@gmail.com"
+                                    target="_blank">p.murzanska@gmail.com</a>
                                 </h4>
                                 <h4>
                                     <GoMarkGithub style={{marginRight: "15px"}}/>
-                                    <a href="https://github.com/PaulinaMurzanska" target="_blank">Github</a>
+                                    <a href="https://github.com/PaulinaMurzanska" target="_blank">GitHub</a>
                                 </h4>
                             </div>
                         </div>
@@ -56,6 +61,6 @@ const Contact = () => {
             </motion.div>
         </React.Fragment>
 
-)
+    )
 }
 export default Contact;

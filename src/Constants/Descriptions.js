@@ -1,7 +1,6 @@
-const aboutReact = "In my present work I'm mostly focused on development using React. With every new project I work on, " +
-    "I'm feeling more and more comfortable using framework features as well as using Java Script solutions for " +
-    "functions that are needed for applications to work as desired.  Here are some of the most important features I actively" +
-    " use and am familiar with: ";
+const aboutReact = "Currently, I’m focused on mastering React. With every new project, I feel more comfortable using " +
+    "framework features as well as Java Script solutions for functions required for applications to work as desired. " +
+    "Here are some of the most important features I use and am familiar with:";
 const reactList = [
     'React app files structure',
     'Routing using "react-router-dom',
@@ -10,22 +9,20 @@ const reactList = [
     "Lifting state up",
     "Passing props between components",
     "Class based and functional based components",
-    'Setting state in class components and using React hooks in functional components.',
+    'Setting state in class components and using React hooks in functional components',
     "Using external libraries : ReactStrap, ReactIcons, Appexchart, MomentJS, Datepicker etc.. ",
     "Components life cycle",
     "Integration with SASS"
 
 ];
-const aboutReactSecond = " I encourage to take a look into my projects, to see how they look like from client side perspective ," +
-    "and also see the code.";
+const aboutReactSecond = " Please take a look at my projects to see how they work from a user’s perspective and to find the code as well.";
 
-const aboutJavaScript = "1 Java Script is for me inseparable part of front end coding. I'm familiar with the most important features that " +
-    "are essential for developing front end applications. I'm feeling more comfortable using JS in the " +
-    "context of problems I'm facing to solve, " +
-    "mostly within React framework," +
-    " rather than using it without any specific context. I have not had much chance to use vanilla JS for the projects I have made so far. " +
-    "Although, in my first static websites projects, many times I've implemented jQuery libraries. Here are some of the most important features I actively" +
-    " use and am familiar with:";
+const aboutJavaScript = "I see Java Script as an inseparable part of Frontwnd coding. I'm familiar with its most " +
+    "important features that are essential for developing Frontend applications. I feel more comfortable using JS in " +
+    "the context of problem-solving, mostly within React framework, rather than using it without any specific context. " +
+    "So far, I haven’t used vanilla JS much for the projects I have worked on. But in my first static websites projects," +
+    " I implemented jQuery libraries many times. Here are some of the most important features I use and am familiar " +
+    "with:";
 const jsList = [
     "Mapping",
     "Sorting",
@@ -42,35 +39,31 @@ const jsList = [
     "...and many more...",
 
 ];
-const aboutSass = "Since I've learned how to work with Sass it became for me the main way for styling DOM elements." +
-    "I think it is more effective way for working with styles. It keeps code much cleaner, and makes styling much faster to write." +
-    "I use SCSS format as it is for me easier to find in which part of code I'm currently in. " +
-    "The major advantages for using Sass instead of " +
-    "classic CSS is for me possibility for creating custom variables, keeping part of styles separately, " +
-    "no need to worry about " +
-    "repeating" +
-    " class names and automatic adjustment of styles " +
-    "for browser types. I find this tool a treasure of front end development:)";
+const aboutSass = "Since I learned how to work with SASS, it has become the main way for me to style DOM elements. " +
+    "I think it is a more effective way of working with styles. It keeps the code much cleaner and makes styling much " +
+    "faster to write. I use SCSS format as it is easier for me to find the part of the code I'm currently in. A major " +
+    "advantage of using SASS instead of classic CSS is the possibility of creating custom variables, keeping parts of " +
+    "styles separate, no issues with repeating class names and automatic adjustment of styles for browser types. " +
+    "I think this tool is a treasure of Frontend development.";
 
-const aboutHtml = "It is obvious that at this point of your front end development path you need to know HTML, right? " +
-    "I spare your time on reading what I know about HTML, instead I want to show you some of my early projects written " +
-    "in just HTML without any frameworks around.";
+const aboutHtml = "At this point of one’s Frontend development journey one should know HTML well, right? I won’t " +
+    "waste your time on reading about my HTML skills. Instead, I would like to show you some of my early " +
+    "projects written in HTML without any frameworks around.";
 
-const htmlDisclaimer = "A little disclaimer here...those are websites ideas taken from the Internet, " +
-    "I'm not the author of the visual side " +
-    "of those projects, as you will see it is a copy of someone else's websites.Nevertheless, the code beneath is 100% " +
-    "written by myself. The purpose of creating those sites was purely to practice my skills for HTML, jQuery and SCC/SASS.";
+const htmlDisclaimer = "A disclaimer is needed here. These are website ideas taken from the Internet. I didn’t " +
+    "design these websites – they are copies of some sites I found on the net. Nevertheless, the code beneath is my " +
+    "work. The purpose was to practice my skills for HTML, jQuery and SCC/SASS.";
 
-const aboutDjango = "During the bootcamp I had learned how to create web application using Django. I'm familiar with " +
-    "basics of this framework. Below you will find some projects I had created during the bootcamp lead by our tutor, and also my own project " +
-    "written by myself. I see  many benefits of using this technology. I would like to gradually develop my skills " +
-    "within this framework, although it's not something I'm mostly focused on, at the moment, but I know, the knowledge I already have, is a strong core" +
-    " for further development " +
-    "with this area. Here are some features of Django I feel comfortable with at this level of my education: ";
+const aboutDjango = "During the bootcamp I learned how to create a web application using Django. I'm familiar with " +
+    "the basics of this framework. Below you will find some projects that I created as part of the bootcamp as well " +
+    "as my independent ones. I see many benefits of using this technology. I would like to gradually develop my skills " +
+    "within this framework, although I’m not focused on it at the moment. But I’m positive that my current knowledge " +
+    "is a strong foundation for further development within this area. Here are some features of Django I feel " +
+    "comfortable with at the current level of my education: ";
 const djangoList = [
     "Creating new projects, new apps",
     "Creating models, views, urls",
-    "Adding html templates, and using the 'base template' for whole app ",
+    "Adding HTML templates, and using the 'base template' for whole app ",
     "Adding static files",
     "Integration with Sass, JS, jQuery",
     "Creating multiple app within one project",
@@ -80,14 +73,14 @@ const djangoList = [
     "Document structure",
     "Implementing simple Python solutions",
     "Awareness of importance the CSRF with forms",
-    "Preparing project for server deployment (Heroku)",
+    "Preparing project for server deployment (Heroku,Firebase)",
 ];
-const aboutDjangoSecond = 'Please take a closer look to the projects below.';
-const aboutDRF = " Django Restful Framework is for me very easy and quick way for building endpoints  that can be useful " +
-    "for front end applications, like those I've build for my React apps. Not only it gives database where you can keep records " +
-    "from your front end site, but also solves the users management system. I find it very easy to understand and build. " +
-    "At this point, I can build my own simple API, but still there is much more for me to learn in this area of coding. " +
-    "The features I am familiar with, are:";
+const aboutDjangoSecond = 'Please take a closer look at the projects below.';
+const aboutDRF = "Django Restful Framework is an easy and quick way for building endpoints that can be useful for " +
+    "Frontend applications like those I've built for my React apps. Not only it provides a database where you can " +
+    "keep records from your Frontend site, but it also solves issues of the users management system. I find it very" +
+    " easy to understand and build. At this point, I can build a simple API, but there is much more for me to learn in " +
+    "this area of coding. The features I am familiar with include:";
 const drfList = [
     "Creating new projects",
     "Creating multiple app inside one project",
@@ -100,53 +93,59 @@ const drfList = [
     "Authentication classes",
     "Server deployment",
 ];
-const aboutDrfSecond = " Below you will find links to my projects, as well as the source code on Github. To sign in we use the same " +
-    "credentials as we use to log in to my React app, as those are parts of the same projects.";
-const aboutCss = "CSS is inseparable part of beeing front end developer. In almost every project presented on this site, you can see the level of my skills" +
-    " within this area. I feel quite comfortable with styling, I know there are many things that I need to learn, but also I know how to search for solutions. " +
-    "I need more experience in creating animations, and hopefully I will implement this new features in my future projects very soon. CSS is very rapidly developing" +
-    " tool, and I'm looking forward for new features issued in future. In my present work though, I 'm using mostly SASS, as I find it more convenient way for writing styles.";
-const aboutPython = " Python is programming language I have started to learn as a first. I have learned all the basics of this language and how to solve " +
-    "simple exercises " +
-    "like writing code for Fibonacci sequence or factorials outcome. " +
-    "I am also familiar with properties of arrays, tuples, data types etc. ";
+const aboutDrfSecond = " Below you will find links to my projects as well as the source code on GitHub. To log in, " +
+    "use the same credentials as the ones provided to access my React app, as these are parts of the same projects.";
+const aboutCss = "CSS is an inseparable part of Frontend development. Almost every project presented on this site " +
+    "shows the level of my skills within this area. I feel quite comfortable with styling. I need to learn more, " +
+    "but I also know how to search for solutions. I need more experience in creating animations, and hopefully I will" +
+    " implement this new feature in my future projects soon. CSS is a very rapidly developing tool, and I'm looking " +
+    "forward to new features added in the future. In my current work, I mostly use SASS as I think it is a more " +
+    "convenient way for writing styles.";
+const aboutPython = " Python was the first programming language I started to learn. So far, I’ve learned all the " +
+    "basics, including solving simple exercises like writing a code for a Fibonacci sequence or factorials outcome. " +
+    "I am also familiar with the properties of arrays, tuples, data types, loops, conditions, etc.";
 
-const aboutPythonSecond = "To be frank, at the beginning it wasn't very clear for me what possibilities this knowledge gives. It became clear for me, when I stated to use Java Script" +
-    " to solve problems that occur during development of my apps. I know, I know.. JS is programming language for front end development... but the scheme " +
-    "of data management " +
-    "remains the same. Language is different, but when it comes to " +
-    "handling data, the core understanding how it works stays the same. I can't say that at the moment I'm Python developer, but I want you to know," +
-    " that I have basic knowledge in this language, that I would like to develop in my work if I had chance to do so. ";
-const aboutGit = " From the beginning of my learning path, I work with Git. I had chance to use this tool not only to my individual work, but also as " +
-    "a part of a team, where I had  to work on individual branch, create new ones, switch between them, sometimes merge versions. For most " +
-    "of cases I keep my code on GitHub, and use Git log storage on my code editor, to review versions. I feel quite comfortable using all the basic " +
-    " git commands, still need a little more practice with advanced features.";
-const aboutEditors = "I use simultaneously PyCharm Professional and Visual Studio Code. I find some projects easier to " +
-    "code in one IDE than in another, that is why I use both of them. ";
-const aboutEditorsSecond = " My main operating system I usually work every day is Windows, but for my most recent projects " +
-    "I had been using Ubuntu as Virtual Machine installed on my Windows. I find Ubuntu more 'programmer friendly' for " +
-    " project that aren't just a static websites."
+const aboutPythonSecond = "Initially, the benefits of this knowledge were not clear to me. It changed when " +
+    "I started to use Java Script to solve problems that occurred when I was working on my apps. I know JS " +
+    "is the programming language for Frontend development, but the scheme of data management remains the same. " +
+    "Language is different, but when it comes to handling data, the core understanding of how it works stays the same." +
+    "I can't say at the moment that I'm a Python developer, but I’m familiar with this language to some extent and " +
+    "I would like to work on it more in the future.";
+const aboutGit = " I’ve been working with GIT since I started learning to code. I’ve used this tool not only in my " +
+    "work, but also as a part of a team when working on an individual branch, creating new ones, switching between " +
+    "them, and sometimes merging versions. I mostly keep my code on GitHub and use GIT log storage available on my " +
+    "code editor to review versions. I feel quite comfortable using all the basic GIT commands, but I still need a " +
+    "little more practice with advanced features.";
+const aboutEditors = "I use PyCharm Professional and Visual Studio Code simultaneously since " +
+    "depending on a project, it’s to code in one or the other.";
+const aboutEditorsSecond = " The operating system I work on is Windows, but for my most recent projects I’ve been " +
+    "using Ubuntu as a Virtual Machine installed on my Windows. I find Ubuntu more 'programmer friendly' for " +
+    "projects that aren't static websites."
 const yardenList = [
-    "General management of all areas of a hotel industry such as an internal HR management and coordinating team of 35 employees.",
-    "Sales and marketing on an international field, customer relations.",
-    "Financial settlements with business partners.",
-    "Conducting financial anlyzes.",
-    "Creating and implementing procedures.",
-    "Responsibility for facility technical maintenance.",
-    "Hotel restaurant management.",
-    "Implementing HACCP procedures.",
-    "Problem solving and representative function."
+    "General management and supervision of all day-to-day activities in the hotel’s organization",
+    'Management of a team of 35 employees',
+    "Sales and marketing on an international field",
+    "Customer relations",
+    "Financial settlements with business partners",
+    "Conducting financial analyzes",
+    "Creating and implementing procedures",
+    "Responsibility for facility technical maintenance",
+    "Hotel restaurant management",
+    "Implementing HACCP procedures",
+    "Problem solving",
+    "Public Relations"
 ];
 const bbList = [
-    "Managing an employee team.",
-    "Supervision over all hotel industry processes.",
-    "Financial settlements with company business partners.",
-    "HR management, facility maintenance.",
-    "Problem solving and representative function."
+    "Team management",
+    "Supervision of all hospitality-related processes",
+    "Financial settlements with company business partners",
+    "Facility maintenance",
+    "Problem solving",
+    "Public Relations"
 ];
 const zulList = [
-    "All mentioned for hotel Yarden responsibilities simultaneously for both properties",
-    "Adjusting work enviroment to covid restrictions.",
+    "Responsibilities as listed below for hotel Yarden",
+    "Adjusting work environment to Covid-19 pandemic restrictions",
 
 ];
 

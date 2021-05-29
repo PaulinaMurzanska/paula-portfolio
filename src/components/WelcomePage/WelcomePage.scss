@@ -4,7 +4,7 @@
 .welcome {
   width: 100vw;
   min-height: 130vh;
-  background-image: url("../../images/bcg4.png");
+  background-image: url("../../images/paulinabck.png");
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
@@ -15,7 +15,7 @@
   }
   @media(max-width: 960px) {
     background-position: top;
-    background-image: url("../../images/paulaFrontPhoto.jpg");
+    background-image: url("../../images/PaulaBcgSmall.png");
   }
 
   .intro-welcome {
@@ -25,18 +25,16 @@
     right: 1%;
     min-height: 90vh;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.47);
-    box-shadow: -6px 1px 7px 0px rgba(151, 132, 132, 0.75);
     padding: 30px;
 
 
     @media(max-width: 1300px) {
-      padding: 15px;
+      padding: 5px 15px 5px 0;
       width: 50%;
     }
     @media(max-width: 1150px) {
-      padding: 15px;
-      width: 60%;
+
+      width: 50%;
     }
     @media(max-width: 960px) {
       width: 70%;

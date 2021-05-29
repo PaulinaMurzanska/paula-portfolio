@@ -1,0 +1,19 @@
+@import "../../scss/variables";
+
+.btn-parallel{
+  width: 120px;
+  height: 30px;
+  background-color: $textColor;
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: .8rem;
+  &:hover{
+
+    font-size: 1rem;
+    transition: .3s;
+  }
+
+}

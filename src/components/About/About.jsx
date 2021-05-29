@@ -6,6 +6,7 @@ import {ROUTE_SKILLS} from "Constants/Routes";
 import {motion} from "framer-motion";
 import {Link} from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
+import ButtonParallel from "components/SharedComponents/ButtonParallel";
 
 const About = () => {
     const text = "onClick={clickHereToOpen}";
@@ -49,44 +50,28 @@ const About = () => {
 
                         <div className='about-inner-container-text '>
                             <span>&lt;h1&gt; Hello Visitor! &lt;/h1&gt;</span>
-                            <h1>I'm junior Front End developer,
-                                dreaming to explore and master the World of Codes...</h1>
+                            <h1>So I’m a developer...</h1>
                             <hr/>
                             <p>
-                                I'm currently based in Krakow junior Front End developer with
-                                a little bit of Back End coding experience.
+                                I'm a Junior Frontend Developer based in Krakow with some Backend coding experience.
                             </p>
-                            <p> Even though for many years my
-                                professional life has been connected to hospitality business,
-                                HR and properties management, I'm very exited to start new career
-                                in IT.
-                            </p>
-                            <p>
-                                It's time for change! Someone told me once, that to become a good developer you
-                                need
-                                to
-                                make
-                                coding become your passion. It worked that way for me! Damn, it requires a lot
-                                of
-                                digging,
-                                reading,
-                                searching, failing to finally find the solutions for problems, that actually
-                                work...what a great satisfaction that is!
+                            <p> I have recently completed a full stack developer bootcamp at Codebrainers Bootcamp where
+                                I’ve learned Backend and Frontend development technologies. But most of my current
+                                skills come from hundreds of hours of my daily work. I constantly learn and work on new
+                                projects that increase my knowledge and skills every day.
                             </p>
                             <p>
-                                I had finished a full stack developer bootcamp, where I had learned technologies
-                                from
-                                back
-                                end
-                                as well as front end development.
-                                I know now, that I want to develop my skills within front end . Currently I'm
-                                mostly
-                                focused
-                                on React SPA for desktop and mobiles app. </p>
+                                All the content that you will see on this website is a result of nine months of intense learning.
+                            </p>
+                            <p>
+                               I want to further develop my skills in Front End. Currently, I'm mostly focused on React SPA for desktop and mobile applications. </p>
 
-                            <p> So what actually are my skills?</p>
+                            <p> A few words about my skills.</p>
                             <Link to={ROUTE_SKILLS}>
-                                <span className='clickable'>{text}</span>
+                                {/*<span className='clickable'>{text}</span>*/}
+                                <ButtonParallel
+                                    buttonText="show skills"
+                                />
                             </Link>
                         </div>
                     </div>

@@ -8,10 +8,10 @@ import {Link} from "react-router-dom";
 import {ROUTE_REACT} from "Constants/Routes";
 import ScrollToTop from "react-scroll-to-top";
 import {motion} from "framer-motion";
+import ButtonParallel from "components/SharedComponents/ButtonParallel";
 
 
 const Plantation = ({path}) => {
-    const text = "onClick={clickHereToOpenGithub}";
 
     return (
         <React.Fragment>
@@ -28,32 +28,29 @@ const Plantation = ({path}) => {
                             <div className='description'>
                                 <div className="description-text">
                                     <h2>Plantation</h2>
-                                    <p>This was my first React App, that I had created as my final project of the
-                                        Codebrainers Bootcamp.
-                                        It contains functionalities like data fetching from external DRF API, sorting,
-                                        filtering and mapping.
-                                        The purpose of building this sort of app, was to practice features that React
-                                        has to offer.
+                                    <p>This is the first React app that I created as the Codebrainers Bootcamp
+                                        completion project. It contains functionalities such as data fetching from
+                                        external DRF API, sorting, filtering and mapping. The purpose of building this
+                                        app was to practice the React features.
                                     </p>
                                     <p>
-                                        Data source comes from written by myself during the course Django Restful API.
-                                        This App gives user possibility
-                                        to add new items, update and remove them.
+                                        Data source comes from Django Restful API which I wrote during the course. This
+                                        App gives a user the possibility to add new items, update and remove them.
                                     </p>
                                     <p>
-                                        The App is designed to manage user's plant that he has at home based on default
-                                        types of plants.
-                                        User can customize names, requirements and pictures. For this app user
-                                        registration function
-                                        has not been implemented.
+                                        The App is designed to manage the user's home plants based on default types of
+                                        plants. The user can customize names, requirements and pictures. The user
+                                        registration function has not been implemented for this app.
                                     </p>
-                                    <span>To check the client side version of the app, please use given in demo image
-                                        login details for existing user.
+                                    <span>To check the user’s side version of the app, please use login details for an
+                                        existing user provided in the demo image.
                                      </span>
-                                    <span>The  Source code of the application is available on my <GoMarkGithub/></span>
+                                    <span>The source code of the application is available on my GitHub</span>
                                     <div className="onclick">
                                         <a href="https://github.com/PaulinaMurzanska/plantation.git"
-                                           target="_blank">{text}</a>
+                                           target="_blank">
+                                            <ButtonParallel buttonText="GitHub"/>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className='demo-image'>

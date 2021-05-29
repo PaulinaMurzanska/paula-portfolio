@@ -2,7 +2,7 @@ import React from "react";
 import '../../scss/pageContainer.scss';
 import SchoolBlock from "components/Education/SchoolBlock";
 import uek from '../../images/ueknew.jpg';
-import codeb from "../../images/yellow bus.png";
+import codeb from "../../images/logoCB.png";
 import lo from "../../images/lo.jpeg";
 import {motion} from "framer-motion";
 import ScrollToTop from "react-scroll-to-top";
@@ -48,8 +48,8 @@ const Education = () => {
                         <div className="inner-container education">
                             <div className="education-site-wrapper">
                                 <SchoolBlock
-                                    imageUlr=""
-                                    schoolName="CodeBrainers"
+                                    imageUlr={codeb}
+                                    schoolName=""
                                     reversed={true}
                                     schoolNameText="CodeBrainers bootcamp"
                                     degree1="Full stack developer | 2020 - 2021"
