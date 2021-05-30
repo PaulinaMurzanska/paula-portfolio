@@ -5,6 +5,7 @@ import {motion} from "framer-motion";
 import {GoMarkGithub} from "react-icons/go";
 import {FaPhone} from "react-icons/fa";
 import {AiTwotoneMail} from "react-icons/ai";
+import {GiWireframeGlobe} from "react-icons/gi";
 
 const Contact = () => {
 
@@ -51,6 +52,7 @@ const Contact = () => {
                                     target="_blank">p.murzanska@gmail.com</a>
                                 </h4>
                                 <h4>
+                                <GiWireframeGlobe style={{marginRight: "10px"}}/>
                                     <a href="https://paulinamurzanska.eu/" target='_blank'>www.paulinamurzanska.eu</a>
                                 </h4>
                                 <h4>

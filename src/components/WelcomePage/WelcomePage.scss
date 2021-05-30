@@ -29,19 +29,17 @@
 
 
     @media(max-width: 1300px) {
-      padding: 5px 15px 5px 0;
+      padding: 0;
       width: 50%;
     }
     @media(max-width: 1150px) {
-
       width: 50%;
     }
     @media(max-width: 960px) {
       width: 70%;
       top: 1.5%;
       background-color: rgba(255, 255, 255, 0);
-          box-shadow: -6px 1px 7px 0px rgba(151, 132, 132, 0);
-
+      box-shadow: -6px 1px 7px 0px rgba(151, 132, 132, 0);
 
     }
     @media(max-width: 850px) {
@@ -52,7 +50,6 @@
       width: 100%;
       margin-top: 40px;
       min-height: 100vh;
-      right: 0;
       box-shadow: -6px 1px 7px 0px rgba(141, 21, 21, 0);
 
     }
@@ -67,12 +64,13 @@
         color: $textColor;
         @media(max-width: 800px) {
           font-size: 2rem;
-          margin-top: -5px;
+          margin-top: 5px;
+
 
         }
         @media(max-width: 550px) {
           font-size: 1.5rem;
-          margin-top: -5px;
+          margin-top: 5px;
 
         }
 
@@ -130,6 +128,7 @@
 
   .sub-header {
     padding: 40px;
+    text-align: center;
     @media(max-width: 1300px) {
       padding: 15px;
     }
@@ -146,18 +145,26 @@
       min-width: 80%;
       opacity: 0;
       transition: 1s;
+      margin: 0;
 
       &.show {
         opacity: 1;
         transition: 2s;
       }
     }
+    @media(max-width: 650px) {
+      right: 0;
+      margin: 0;
+      width: 90%;
+       position: absolute;
+
+    }
     @media(max-width: 350px) {
       position: absolute;
       top: 25%;
-      padding: 5px;
-      right: 1%;
-      min-width: 85%;
+      right: 0;
+      margin: 0;
+      width: 90%;
 
     }
 
@@ -182,11 +189,13 @@
 
     }
     @media(max-width: 800px) {
-      background-color: rgba(245, 249, 250, 0.72);
+      background-color: rgba(245, 249, 250, 0.85);
       position: absolute;
       top: 45%;
-      right: 3%;
-      min-width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+      width: 80%;
       opacity: 0;
       transition: 1s;
 
@@ -196,12 +205,23 @@
       }
 
     }
+    @media(max-width: 375px) {
+      position: absolute;
+      top: 50%;
+      min-width: 90%;
+      padding: 5px;
+    }
+
     @media(max-width: 350px) {
       position: absolute;
+       padding: 5px;
       top: 40%;
-      padding: 5px;
-      right: 4%;
-      min-width: 82%;
+
+    }
+    @media(max-width: 320px) {
+      position: absolute;
+      top: 50%;
+
     }
 
     p {
