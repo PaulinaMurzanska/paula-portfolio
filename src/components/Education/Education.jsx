@@ -51,8 +51,8 @@ const Education = () => {
                                     imageUlr={codeb}
                                     schoolName=""
                                     reversed={true}
-                                    schoolNameText="CodeBrainers bootcamp"
-                                    degree1="Full stack developer | 2020 - 2021"
+                                    schoolNameText="CodeBrainers Bootcamp"
+                                    degree1="Fullstack Developer | 2020 - 2021"
                                     subject1=''
                                     degree2=""
                                     subject2=''
