@@ -49,13 +49,13 @@ const About = () => {
 
 
                         <div className='about-inner-container-text '>
-                            <span>&lt;h1&gt; Hello Visitor! &lt;/h1&gt;</span>
+                            {/*<span>&lt;h1&gt; Hello Visitor! &lt;/h1&gt;</span>*/}
                             <h1>So I’m a developer...</h1>
                             <hr/>
                             <p>
                                 I'm a Junior Frontend Developer based in Krakow with some Backend coding experience.
                             </p>
-                            <p> I have recently completed a full stack developer bootcamp at Codebrainers Bootcamp where
+                            <p> I have recently completed a Fullstack Developer Bootcamp at Codebrainers school, where
                                 I’ve learned Backend and Frontend development technologies. But most of my current
                                 skills come from hundreds of hours of my daily work. I constantly learn and work on new
                                 projects that increase my knowledge and skills every day.
@@ -64,7 +64,7 @@ const About = () => {
                                 All the content that you will see on this website is a result of nine months of intense learning.
                             </p>
                             <p>
-                               I want to further develop my skills in Front End. Currently, I'm mostly focused on React SPA for desktop and mobile applications. </p>
+                               I want to further develop my skills in Frontend. Currently, I'm mostly focused on React SPA for desktop and mobile applications. </p>
 
                             <p> A few words about my skills.</p>
                             <Link to={ROUTE_SKILLS}>

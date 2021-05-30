@@ -35,7 +35,7 @@ const Budget = () => {
                                     </p>
                                     <p>
                                         The app is based on the external Django Restful API that I wrote. React app in
-                                        combination with DRsssF allows creating new users.
+                                        combination with DRF allows creating new users.
                                     </p>
                                     <p>
                                         While working on this project, I was trying to predict the errors that could

@@ -146,6 +146,7 @@
       min-width: 80%;
       opacity: 0;
       transition: 1s;
+
       &.show {
         opacity: 1;
         transition: 2s;
@@ -157,6 +158,7 @@
       padding: 5px;
       right: 1%;
       min-width: 85%;
+
     }
 
     h3 {

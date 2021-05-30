@@ -17,7 +17,7 @@ const reactList = [
 ];
 const aboutReactSecond = " Please take a look at my projects to see how they work from a user’s perspective and to find the code as well.";
 
-const aboutJavaScript = "I see Java Script as an inseparable part of Frontwnd coding. I'm familiar with its most " +
+const aboutJavaScript = "I see Java Script as an inseparable part of Frontend coding. I'm familiar with its most " +
     "important features that are essential for developing Frontend applications. I feel more comfortable using JS in " +
     "the context of problem-solving, mostly within React framework, rather than using it without any specific context. " +
     "So far, I haven’t used vanilla JS much for the projects I have worked on. But in my first static websites projects," +
