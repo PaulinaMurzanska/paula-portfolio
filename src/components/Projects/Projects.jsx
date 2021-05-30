@@ -239,7 +239,7 @@ const Projects = () => {
                                     <div className="onclick">
                                         <a href="https://github.com/PaulinaMurzanska"
                                            target="_blank">
-                                            <ButtonParallel buttonText="Github"/>
+                                            <ButtonParallel buttonText="GitHub"/>
                                         </a>
                                     </div>
                                 </div>

@@ -51,6 +51,9 @@ const Contact = () => {
                                     target="_blank">p.murzanska@gmail.com</a>
                                 </h4>
                                 <h4>
+                                    <a href="https://paulinamurzanska.eu/" target='_blank'>www.paulinamurzanska.eu</a>
+                                </h4>
+                                <h4>
                                     <GoMarkGithub style={{marginRight: "15px"}}/>
                                     <a href="https://github.com/PaulinaMurzanska" target="_blank">GitHub</a>
                                 </h4>
