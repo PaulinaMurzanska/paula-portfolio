@@ -32,7 +32,7 @@ export const ProjectItemPortfolio= ({title, projectScreen, path}) => {
                         <p> This portfolio site is a React SPA, too!</p>
                     </div>
                 </Link>
-                <a className="github" href="#">
+                <a className="github" href="https://github.com/PaulinaMurzanska/paula-portfolio" target="_blank">
                     <GoMarkGithub/>
                 </a>
 

@@ -10,7 +10,7 @@ import {
 } from "Constants/Routes";
 import "./NavLeft.scss";
 import {FaFacebookF, FaLinkedinIn} from "react-icons/fa";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import {GoMarkGithub} from "react-icons/go";
 
 const NavLeft = () => {
@@ -21,35 +21,36 @@ const NavLeft = () => {
             <div className={`menu-side ${openMenu ? "roll-down" : ""}`}>
                 <Link to={ROUTE_MAIN}>
                     <div className='logo-top'>
-                        <span>paulina</span>
-                        <span>murzanska</span>
+                        <span>Paulina</span>
+                        <span>Murzanska</span>
                     </div>
                 </Link>
 
                 <div className="menu-links">
+
                     <AppNavItem
-                        name='about me'
+                        name='About me'
                         path={ROUTE_ABOUT}
 
                     />
                     <AppNavItem
-                        name='about my skills'
+                        name='My skills'
                         path={ROUTE_ABOUT_SKILLS}
                     />
                     <AppNavItem
-                        name='projects'
+                        name='Projects'
                         path={ROUTE_PROJECTS}
                     />
                     <AppNavItem
-                        name='education'
+                        name='Education'
                         path={ROUTE_EDUCATION}
                     />
                     <AppNavItem
-                        name='work history'
+                        name='Work history'
                         path={ROUTE_WORK}
                     />
                     <AppNavItem
-                        name='contact'
+                        name='Contact'
                         path={ROUTE_CONTACT}
                     />
                 </div>
