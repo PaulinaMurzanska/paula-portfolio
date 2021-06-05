@@ -190,6 +190,7 @@
       &.on-hover {
         div {
           background-color: $textColor;
+          cursor:pointer;
         }
       }
 
@@ -252,6 +253,8 @@
     &.on-hover {
       div {
         background-color: $textColor;
+                  cursor:pointer;
+
       }
     }
 

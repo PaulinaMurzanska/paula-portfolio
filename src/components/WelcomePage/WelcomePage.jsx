@@ -49,23 +49,20 @@ const WelcomePage = () => {
                         <h1>&lt;h1&gt; Hello Visitor! &lt;/h1&gt;</h1>
 
                     </div>
-                    <div className={`chevron-on ${showText ? "open-text" : ""}`}
-                         onClick={() => setShowText(true)}
-                    >
-                        <BsChevronDoubleDown/>
-                    </div>
-                    <div className={`chevron-off ${showText ? "show-text" : ""}`}
-                         onClick={() => setShowText(false)}
-                    >
-                        <BsChevronDoubleDown/>
-                    </div>
-                    <div className={`sub-header ${showText ? "show" : ""}`}>
+                    <div className="sub-header">
                         <h3>
                             I'm a Junior Frontend Developer wanting to explore and master the World of Codes...
+                            <small
+                            onClick={() => setShowText(true)}
+                            >read more</small>
                         </h3>
+
                     </div>
 
                     <div className={`text-about ${showText ? "show" : ""}`}>
+                         <small
+                            onClick={() => setShowText(false)}
+                            >hide text</small>
                         <p> For many years, my professional life has been connected to hospitality, HR and property
                             management. </p>
                         <p>
