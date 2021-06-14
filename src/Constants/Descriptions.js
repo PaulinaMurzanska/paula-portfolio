@@ -52,7 +52,7 @@ const aboutHtml = "At this point of one’s Frontend development journey one sho
 
 const htmlDisclaimer = "A disclaimer is needed here. These are website ideas taken from the Internet. I didn’t " +
     "design these websites – they are copies of some sites I found on the net. Nevertheless, the code beneath is my " +
-    "work. The purpose was to practice my skills for HTML, jQuery and SCC/SASS.";
+    "work. The purpose was to practice my skills for HTML, jQuery and CSS/SASS.";
 
 const aboutDjango = "During the bootcamp I learned how to create a web application using Django. I'm familiar with " +
     "the basics of this framework. Below you will find some projects that I created as part of the bootcamp as well " +

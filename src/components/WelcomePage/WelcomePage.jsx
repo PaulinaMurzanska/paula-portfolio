@@ -48,8 +48,7 @@ const WelcomePage = () => {
                     <div className="header-welcome">
                         <h1>&lt;h1&gt; Hello Visitor! &lt;/h1&gt;</h1>
 
-                    </div>
-                    <div className="sub-header">
+                    </di<div className="sub-header">
                         <h3>
                             I'm a Junior Frontend Developer wanting to explore and master the World of Codes...
                             <small
